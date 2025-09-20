@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Marketing – Erjen Marketing</title>
+
+    <style>
+        /* === Reset & temel === */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #111;
+        }
+
+        /* === Header (sabit) === */
+        .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            z-index: 9999;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, .06);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-logo {
+            height: 50px;
+        }
+
+        .header-nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 700;
+        }
+
+        .cta-button {
+            background: #d42e2e;
+            color: #fff;
+            padding: 10px 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 800;
+        }
+
+        /* === Sayfa gövdesi (SEO sayfası formatı) === */
+        html,
+        body {
+            height: 100%;
+        }
+
+        body.social-page {
+            background: url("images/socialMedia.webp") no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            min-height: 100vh;
+            /* fallback */
+            min-height: 100dvh;
+            /* mobile */
+            padding-top: 88px;
+            /* header yüksekliği kadar */
+        }
+
+        .overlay {
+            background-color: rgba(255, 255, 255, .6);
+            /* beyaz film */
+            flex: 1 0 auto;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            min-height: 100dvh;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+        /* İçerik alanı */
+        .sm-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            color: #222;
+        }
+
+        /* CTA kutusu */
+        .cta-box {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f7f7f7;
+            border-left: 4px solid #C1272D;
+        }
+
+        /* —— Link: mor/altı çizili olmasın (visited dahil) —— */
+        .social-page .cta-box a,
+        .social-page .cta-box a:visited {
+            color: #111;
+            text-decoration: none;
+            font-weight: 800;
+        }
+
+        .social-page .cta-box a:hover,
+        .social-page .cta-box a:active {
+            color: #111;
+            text-decoration: none;
+        }
+
+        .social-page .cta-box a:focus-visible {
+            outline: 2px solid #C1272D;
+            outline-offset: 2px;
+            text-decoration: none;
+        }
+
+        /* Eski küçük vurgu sınıfı (kullanırsan) */
+        .link-cta {
+            text-decoration: none;
+            font-weight: 800;
+            color: #000;
+            transition: color .2s;
+        }
+
+        .link-cta:hover {
+            color: #111;
+        }
+
+        /* Footer (sticky) */
+        footer {
+            margin-top: auto;
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+    </style>
+</head>
+
+<body class="social-page">
+    <div class="overlay">
+
+        <!-- Header -->
+        <header class="main-header">
+            <div class="header-container">
+                <img src="images/logo.png" alt="Erjen Marketing Logo" class="header-logo" />
+                <nav class="header-nav">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#diensten">Diensten</a>
+                    <a href="index.html#onze-werken">Projekten</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="seo.html" class="cta-button">GRATIS SEO CHECK</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- İçerik -->
+        <main>
+            <section class="sm-section">
+                <h2 style="font-size:32px; color:#000; margin-bottom:20px;">Wat doen we voor jouw social media?</h2>
+
+                <p>
+                    Social Media Marketing (SMM) is de strategie waarmee je merkzichtbaarheid, vertrouwen en conversies
+                    opbouwt op kanalen waar je doelgroep dagelijks actief is — zoals Instagram, Facebook, TikTok,
+                    LinkedIn en YouTube. Met een slimme combinatie van organische content en
+                    <strong>gerichte advertenties</strong> zorgen we voor meetbare groei.
+                </p>
+
+                <p>
+                    Meer dan 4,5 miljard mensen gebruiken dagelijks social media. Social media negeren betekent dat je
+                    potentiële klanten rechtstreeks naar je concurrenten laat gaan.
+                </p>
+
+                <p>
+                    Bij <strong>Erjen Marketing</strong> werken we data-gedreven en met <strong>performance
+                        creatives</strong>.
+                    We zetten jouw kanalen op of optimaliseren ze, inclusief contentplanning, community management,
+                    advertentiecampagnes (Meta &amp; TikTok Ads), pixel/Conversions API en duidelijke rapportage — alles
+                    van A tot Z geregeld.
+                </p>
+
+                <ul>
+                    <li>Strategie &amp; contentplanning (formats, kalender, short-form video)</li>
+                    <li>Creatie &amp; community management (DM/reacties, merktoon)</li>
+                    <li>Betaalde advertenties (Meta, TikTok, LinkedIn) — full-funnel opzet</li>
+                    <li>Tracking &amp; data (Pixel/Conversions API) voor correcte metingen</li>
+                    <li>Doorlopende rapportage en optimalisatie op ROAS/CAC</li>
+                </ul>
+
+                <div class="cta-box">
+                    <p>📱 <strong>Wij analyseren jouw huidige kanalen of zetten een helder startplan op. Social media
+                            check en adviesgesprek aanvragen?</strong></p>
+                    <p class="cta-line">
+                        <a href="index.html#contact-form" class="cta-link">
+                            💬 Neem nu contact met ons op en ontvang een vrijblijvende offerte.
+                        </a>
+                    </p>
+                </div>
+
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <img src="images/logo.png" alt="Erjen Marketing Logo" style="height:50px; margin-bottom:15px;">
+            <p>info@erjenmarketing.nl</p>
+            <p>085 004 9659</p>
+            <p>Van Utrechtweg 20h, 2921 LN Krimpen aan den IJssel</p>
+            <p>KvK: 78617324</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

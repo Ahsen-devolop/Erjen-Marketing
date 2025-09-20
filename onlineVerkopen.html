@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online Verkopen – Erjen Marketing</title>
+
+    <style>
+        /* Reset & temel */
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #111
+        }
+
+        /* Sabit header */
+        .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            z-index: 9999;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, .06)
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .header-logo {
+            height: 50px
+        }
+
+        .header-nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 700
+        }
+
+        .cta-button {
+            background: #d42e2e;
+            color: #fff;
+            padding: 10px 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 800
+        }
+
+        /* Sayfa gövdesi (SEO sayfası formatı) */
+        html,
+        body {
+            height: 100%
+        }
+
+        body.ov-page {
+            background: url("images/onlineVerkopen.webp") no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            min-height: 100vh;
+            min-height: 100dvh;
+            padding-top: 88px;
+        }
+
+        .overlay {
+            background-color: rgba(255, 255, 255, .6);
+            flex: 1 0 auto;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            min-height: 100dvh;
+        }
+
+        main {
+            flex: 1 0 auto
+        }
+
+        /* İçerik alanı */
+        .ov-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            color: #222;
+        }
+
+        /* CTA kutusu (SEO ile aynı) */
+        .cta-box {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f7f7f7;
+            border-left: 4px solid #C1272D;
+        }
+
+        .link-cta {
+            text-decoration: none;
+            font-weight: 800;
+            color: #000;
+            transition: color .2s
+        }
+
+        .link-cta:hover {
+            color: #111
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px
+        }
+    </style>
+</head>
+
+<body class="ov-page">
+    <div class="overlay">
+
+        <!-- Header -->
+        <header class="main-header">
+            <div class="header-container">
+                <img src="images/logo.png" alt="Erjen Marketing Logo" class="header-logo" />
+                <nav class="header-nav">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#diensten">Diensten</a>
+                    <a href="index.html#onze-werken">Projekten</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="seo.html" class="cta-button">GRATIS SEO CHECK</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- İçerik -->
+        <main>
+            <!-- Başlık -->
+            <section style="text-align:center;margin-top:40px;">
+                <h1 style="font-size:42px;color:#000;margin:0;">Wat doen we voor jouw online verkopen?</h1>
+            </section>
+
+            <section class="ov-section">
+                <h2 style="font-size:32px;color:#000;margin-bottom:20px;"></h2>
+
+                <p>
+                    We helpen je om meer omzet te halen via je <strong>eigen webshop</strong> (Shopify, WooCommerce)
+                    en <strong>marketplaces</strong> zoals Bol.com, Amazon en eBay. Met feed-beheer,
+                    listing-optimalisatie,
+                    gerichte advertentiecampagnes en conversie-optimalisatie laten we jouw online verkoop groeien.
+                </p>
+
+                <ul>
+                    <li>Kanaal- &amp; platformkeuze: Shopify, WooCommerce, Bol, Amazon, eBay</li>
+                    <li>Productfeed &amp; catalogusbeheer (varianten, EAN, mapping, categorieën)</li>
+                    <li>Listing-SEO: titels, bullets, beschrijvingen, A+ content &amp; beeldrichtlijnen</li>
+                    <li>Prijsstrategie: repricing, promoties, bundels, buy-box optimalisatie</li>
+                    <li>Voorraad- &amp; orderkoppelingen (ERP/POS), fulfilment (FBA / LVB) advies</li>
+                    <li>Ads: Google Shopping &amp; Performance Max, Bol/Amazon Sponsored Products &amp; Brands</li>
+                    <li>Reviews &amp; ratings management, merkstore/brand registry</li>
+                    <li>Conversie-optimalisatie (CRO), analytics &amp; dashboards (GA4, Conversions API)</li>
+                    <li>Internationale uitrol: meertaligheid, BTW-regels, verzendzones</li>
+                </ul>
+
+                <div class="cta-box">
+                    <p>📦 <strong>Gratis online verkopen check &amp; advies?</strong></p>
+                    <p>We beoordelen je webshop, marketplaces en ads-setup en maken een kort actieplan — volledig
+                        gratis.</p>
+                    <p style="margin:8px 0 0;">
+                        <a class="link-cta" href="index.html#contact-form">
+                            💬 Neem nu contact met ons op en ontvang een vrijblijvende offerte.
+                        </a>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <img src="images/logo.png" alt="Erjen Marketing Logo" style="height:50px;margin-bottom:15px">
+            <p>info@erjenmarketing.nl</p>
+            <p>085 004 9659</p>
+            <p>Van Utrechtweg 20h, 2921 LN Krimpen aan den IJssel</p>
+            <p>KvK: 78617324</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

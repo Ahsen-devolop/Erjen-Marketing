@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEO Diensten – Erjen Marketing</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* temel */
+        html,
+        body {
+            height: 100%;
+        }
+
+        body.seo-page {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url("images/SEO.webp") no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            /* wrapper için yer ayır */
+            min-height: 100vh;
+            /* fallback */
+            min-height: 100dvh;
+            /* mobil adres çubuğu değişimine uyumlu */
+        }
+
+        /* tüm sayfa sarmalayıcı: kolon-flex */
+        .overlay {
+            background-color: rgba(255, 255, 255, .6);
+            flex: 1 0 auto;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            /* fallback */
+            min-height: 100dvh;
+        }
+
+        /* içerik bölümü esnesin */
+        main {
+            flex: 1 0 auto;
+        }
+
+        .seo-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            color: #222;
+        }
+
+        .cta-box {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f7f7f7;
+            border-left: 4px solid #C1272D;
+        }
+
+        /* ✅ footer altta sabit kalır (içerik kısaysa ekran dibine itilir) */
+        footer {
+            margin-top: auto;
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+    </style>
+</head>
+
+<body class="seo-page">
+    <div class="overlay">
+        <!-- sabit header -->
+        <header class="main-header">
+            <div class="header-container">
+                <img src="images/logo.png" alt="Erjen Marketing Logo" class="header-logo" />
+                <nav class="header-nav">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#services">Diensten</a>
+                    <a href="index.html#portfolio">Projekten</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="seo.html" class="cta-button">GRATIS SEO CHECK</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- içerik -->
+        <main>
+            <section style="text-align:center; margin-top:40px;">
+                <h1 style="font-size:42px; color:#000; margin:0;">Wat is SEO?</h1>
+            </section>
+
+            <section class="seo-section">
+                <h2 style="font-size:32px; color:#000; margin-bottom:20px;">Wat is SEO?</h2>
+                <p>Zoekmachineoptimalisatie (SEO) is een uitgebreid en strategisch proces dat ervoor zorgt dat jouw
+                    website zo hoog mogelijk verschijnt in de zoekresultaten van zoekmachines zoals Google. Hoe hoger je
+                    scoort, hoe zichtbaarder je bent — en dus trek je meer bezoekers aan.</p>
+                <p>Meer dan 80% van alle online zoektochten begint via een zoekmachine. SEO negeren betekent dat je
+                    potentiële klanten rechtstreeks naar je concurrenten laat gaan.</p>
+                <p>Helaas beloven veel bedrijven onrealistische resultaten zoals: “Wij krijgen je binnen een paar weken
+                    op de eerste pagina van Google.” Laat je hierdoor niet misleiden — als het echt zo makkelijk was,
+                    zouden zoekmachines hun geloofwaardigheid verliezen.</p>
+                <p>Bij <strong>Erjen Marketing</strong> maken we uitsluitend gebruik van ethische en up-to-date
+                    SEO-technieken. We bieden duurzame oplossingen die volledig in lijn zijn met de algoritmes van
+                    zoekmachines, zodat jouw online zichtbaarheid op een veilige en effectieve manier toeneemt.</p>
+                <div class="cta-box">
+                    <p>🎁 <strong>Gratis SEO-check en adviesgesprek aanvragen?</strong><br>
+                        Wij analyseren jouw website, identificeren sterke en zwakke punten, en bieden een
+                        gepersonaliseerd SEO-plan aan — volledig gratis!
+                    </p>
+                    <p class="cta-line">
+                        <a href="index.html#contact-form" class="cta-link">
+                            💬 Neem nu contact met ons op en ontvang een vrijblijvende offerte.
+                        </a>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!-- ✅ footer her zaman altta -->
+        <footer>
+            <img src="images/logo.png" alt="Erjen Marketing Logo" style="height:50px; margin-bottom:15px;">
+            <p>info@erjenmarketing.nl</p>
+            <p>085 004 9659</p>
+            <p>Van Utrechtweg 20h, 2921 LN Krimpen aan den IJssel</p>
+            <p>KvK: 78617324</p>
+        </footer>
+    </div>
+</body>
+
+</html>

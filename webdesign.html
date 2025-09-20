@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webdesign – Erjen Marketing</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body.webdesign-page {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url("images/webdesign.webp") no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            min-height: 100vh;
+            min-height: 100dvh;
+        }
+
+        .overlay {
+            background-color: rgba(255, 255, 255, .6);
+            flex: 1 0 auto;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            min-height: 100dvh;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+        .webdesign-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            color: #222;
+        }
+
+        .cta-box {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f7f7f7;
+            border-left: 4px solid #C1272D;
+        }
+
+        footer {
+            margin-top: auto;
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+    </style>
+</head>
+
+<body class="webdesign-page">
+    <div class="overlay">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="header-container">
+                <img src="images/logo.png" alt="Erjen Marketing Logo" class="header-logo" />
+                <nav class="header-nav">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#diensten">Diensten</a>
+                    <a href="index.html#projekten">Projekten</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="seo.html" class="cta-button">GRATIS SEO CHECK</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <main>
+            <section style="text-align:center; margin-top:40px;">
+                <h1 style="font-size:42px; color:#000; margin:0;">Webdesign</h1>
+            </section>
+
+            <section class="webdesign-section">
+                <h2 style="font-size:32px; color:#000; margin-bottom:20px;">Waarom professioneel webdesign?</h2>
+                <p>
+                    Een website is vaak het eerste contactpunt dat een klant met jouw bedrijf heeft. Een verouderde of
+                    trage
+                    website kan potentiële klanten afschrikken. Met een modern en conversiegericht design vergroot je
+                    niet alleen
+                    de betrouwbaarheid van je merk, maar ook je omzet.
+                </p>
+
+                <h2 style="font-size:28px; margin-top:30px;">Wat bieden wij?</h2>
+                <ul>
+                    <li>Responsieve websites die perfect werken op mobiel, tablet en desktop</li>
+                    <li>Snelheid & veiligheid geoptimaliseerd voor betere prestaties</li>
+                    <li>Conversiegericht design met duidelijke call-to-actions</li>
+                    <li>Integratie met SEO & online marketing strategieën</li>
+                    <li>Hosting, onderhoud en support inbegrepen</li>
+                </ul>
+
+                <p>
+                    Ons webdesign-team combineert creatieve vormgeving met technische expertise. Zo zorgen wij voor
+                    websites die
+                    niet alleen mooi zijn, maar ook effectief bezoekers omzetten naar klanten.
+                </p>
+
+                <div class="cta-box">
+                    <p>💻 <strong>Klaar voor een website die jouw merk laat groeien?</strong><br>
+                        Neem contact met ons op voor een gratis adviesgesprek en ontdek wat wij voor jou kunnen
+                        ontwerpen.
+                    </p>
+                    <p class="cta-line">
+                        <a href="index.html#contact-form" class="cta-link">
+                            💬 Neem nu contact met ons op en ontvang een vrijblijvende offerte.
+                        </a>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <img src="images/logo.png" alt="Erjen Marketing Logo" style="height:50px; margin-bottom:15px;">
+            <p>info@erjenmarketing.nl</p>
+            <p>085 004 9659</p>
+            <p>Van Utrechtweg 20h, 2921 LN Krimpen aan den IJssel</p>
+            <p>KvK: 78617324</p>
+        </footer>
+    </div>
+</body>
+
+</html>

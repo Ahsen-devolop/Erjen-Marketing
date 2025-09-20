@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website Onderhoud – Erjen Marketing</title>
+
+    <style>
+        /* Reset */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #111;
+        }
+
+        /* ===== Header (diğer sayfalarla aynı) ===== */
+        .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            z-index: 9999;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, .06);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-logo {
+            height: 50px;
+        }
+
+        .header-nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 700;
+        }
+
+        .cta-button {
+            background: #d42e2e;
+            color: #fff;
+            padding: 10px 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 800;
+        }
+
+        /* ===== Arka plan + overlay (full-bleed image) ===== */
+        html,
+        body {
+            height: 100%;
+        }
+
+        body.maintenance-page {
+            background: url("images/websiteOnderhoud.webp") no-repeat center center fixed;
+            background-size: cover;
+            padding-top: 88px;
+            /* sabit header yüksekliği */
+        }
+
+        .overlay {
+            background: rgba(255, 255, 255, .6);
+            /* yarı şeffaf film */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ===== İçerik ===== */
+        main {
+            flex: 0 0 auto;
+        }
+
+        /* esnemesin (footer’a yer bıraksın) */
+        .maint-section {
+            max-width: 900px;
+            margin: 40px auto 24px;
+            padding: 20px;
+            color: #222;
+            text-align: left;
+        }
+
+        .maint-section h1 {
+            font-size: 42px;
+            margin: 0 0 20px;
+            font-weight: 700;
+        }
+
+        .maint-section h2 {
+            font-size: 28px;
+            margin: 28px 0 12px;
+        }
+
+        .maint-section p {
+            margin: 0 0 16px;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        /* ===== CTA kartı (örnekle aynı tarz) ===== */
+        .cta-box {
+            position: relative;
+            max-width: 1040px;
+            /* ortalanmış geniş kart */
+            margin: -32px auto 32px;
+            /* üstteki görselin içine taşır */
+            padding: 22px 28px;
+            background: rgba(255, 255, 255, .97);
+            border-left: 6px solid #C1272D;
+            border-radius: 8px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
+            backdrop-filter: blur(2px);
+        }
+
+        .cta-box p {
+            margin: 0 0 10px;
+            line-height: 1.55;
+            color: #111;
+            font-size: 18px;
+        }
+
+        .cta-box p:first-child {
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .cta-box p:last-child {
+            margin: 12px 0 0;
+        }
+
+        .link-cta {
+            text-decoration: none;
+            font-weight: 800;
+            color: #000;
+            transition: color .2s;
+        }
+
+        .link-cta:hover {
+            color: #111;
+        }
+
+        /* ===== Footer hemen CTA’nın ardından gelsin ===== */
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 0;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width:640px) {
+            .maint-section h1 {
+                font-size: 32px;
+            }
+
+            .maint-section p,
+            .cta-box p {
+                font-size: 16px;
+            }
+
+            .cta-box {
+                margin: -24px auto 28px;
+                padding: 18px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body class="maintenance-page">
+    <div class="overlay">
+
+        <!-- Header -->
+        <header class="main-header">
+            <div class="header-container">
+                <img src="images/logo.png" alt="Erjen Marketing Logo" class="header-logo" />
+                <nav class="header-nav">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#diensten">Diensten</a>
+                    <a href="index.html#projekten">Projekten</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="seo.html" class="cta-button">GRATIS SEO CHECK</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <main>
+            <section class="maint-section">
+                <h1>Website Onderhoud</h1>
+
+                <h2>Zorgeloos online blijven</h2>
+                <p>
+                    Met ons onderhoudspakket blijft jouw website <strong>veilig, snel en up-to-date</strong>.
+                    Wij monitoren, updaten en beveiligen — zodat jij je kunt focussen op je bedrijf.
+                </p>
+
+                <h2>Wat zit erin?</h2>
+                <ul>
+                    <li><strong>Core/CMS & plugin updates</strong> (WordPress e.d.) met eerst <em>staging</em>-test</li>
+                    <li><strong>Dagelijkse back-ups</strong> met 30–90 dagen retentie en snelle restore</li>
+                    <li><strong>Beveiliging</strong>: malware-scan, firewall, brute-force & spam-bescherming</li>
+                    <li><strong>Monitoring</strong>: uptime (24/7), SSL, domein & DNS-bewaking</li>
+                    <li><strong>Performance</strong>: caching, beeldoptimalisatie, database-opschoning</li>
+                    <li><strong>Technische support</strong> & kleine content-wijzigingen per maand</li>
+                    <li><strong>Kwartaalrapport</strong> met status, verbeterpunten en workload</li>
+                    <li><strong>AVG/GDPR-check</strong>: cookie banner & privacy-basics op orde</li>
+                    <li>Optioneel: <strong>hosting</strong>, e-mail, CDN en WAF-opzet</li>
+                </ul>
+
+                <h2>Onderhoudsplannen</h2>
+                <ul>
+                    <li><strong>Basis</strong> – Updates, back-ups, beveiliging, uptime-monitoring</li>
+                    <li><strong>Pro</strong> – + Performance tuning, staging, maandelijkse fixes</li>
+                    <li><strong>Plus</strong> – + Prioritaire support, SLA & uitgebreide rapportage</li>
+                </ul>
+
+                <p>We adviseren welk pakket het beste past bij jouw website, traffic en groeiplannen.</p>
+            </section>
+
+            <!-- CTA kartı: görselin üstünde, ortalanmış -->
+            <div class="cta-box">
+                <p>🛠️ <strong>Website zonder zorgen?</strong></p>
+                <p>Vraag een gratis onderhoudsscan aan. We checken snelheid, veiligheid en stabiliteit en sturen je
+                    een duidelijk plan.</p>
+                <p>
+                    💬 <a class="link-cta" href="index.html#contact-form">
+                        Neem nu contact met ons op en ontvang een vrijblijvende offerte.
+                    </a>
+                </p>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <img src="images/logo.png" alt="Erjen Marketing Logo" style="height:50px;margin-bottom:15px">
+            <p>info@erjenmarketing.nl</p>
+            <p>085 004 9659</p>
+            <p>Van Utrechtweg 20h, 2921 LN Krimpen aan den IJssel</p>
+            <p>KvK: 78617324</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
