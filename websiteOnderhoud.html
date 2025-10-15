@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website Onderhoud – Erjen Marketing</title>
+
+    <!-- Fonts & global -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Sayfaya özel ufak stiller (şablonla aynı) -->
+    <style>
+        :root {
+            --ink: #111;
+            --muted: #5f6370;
+            --red: #C1272D;
+            --bg: #f6f7f9;
+            --card: #fff;
+            --r: 22px;
+            --shadow: 0 14px 36px rgba(16, 24, 40, .10);
+            --line: #e9eaee;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Montserrat", system-ui, Segoe UI, Roboto, Arial, sans-serif;
+            color: var(--ink);
+            background: var(--bg);
+        }
+
+        .wrap {
+            max-width: 980px;
+            margin: 28px auto 56px;
+            padding: 0 20px;
+        }
+
+        .seo-card {
+            background: var(--card);
+            border-radius: var(--r);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .seo-card .media {
+            padding: 14px 14px 0;
+        }
+
+        .seo-card .media img {
+            width: 100%;
+            display: block;
+            border-radius: 16px;
+            object-fit: cover;
+            aspect-ratio: 16/9;
+        }
+
+        .seo-card .content {
+            padding: 22px 24px 26px;
+        }
+
+        .seo-card h1 {
+            margin: 6px 0 12px;
+            font-size: clamp(28px, 3vw, 42px);
+            font-weight: 800;
+            letter-spacing: .2px;
+        }
+
+        .seo-card h2 {
+            margin: 10px 0 8px;
+            font-size: clamp(20px, 2.2vw, 26px);
+            font-weight: 800;
+        }
+
+        .seo-card p {
+            margin: 0 0 14px;
+            color: var(--muted);
+            line-height: 1.75;
+        }
+
+        .seo-card ul {
+            margin: 0 0 10px 18px;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .cta-box {
+            margin-top: 18px;
+            padding: 18px 20px;
+            background: #fafafa;
+            border-left: 6px solid var(--red);
+            border-radius: 12px;
+        }
+
+        .cta-box a {
+            color: var(--ink);
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .cta-box a:focus-visible {
+            outline: 2px solid var(--red);
+            outline-offset: 2px;
+        }
+
+        @media (max-width:600px) {
+            .seo-card .content {
+                padding: 18px 18px 22px
+            }
+
+            .seo-card h1 {
+                margin-top: 2px
+            }
+        }
+
+        footer#contact {
+            background: #fff;
+            color: var(--ink);
+            padding: 28px 16px 30px;
+            border-top: 1px solid var(--line);
+        }
+
+        footer#contact .footer-content {
+            max-width: 1120px;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        footer#contact .footer-logo {
+            height: 38px;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        footer#contact p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.5;
+            color: var(--muted);
+        }
+
+        footer#contact a {
+            color: var(--ink);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width:520px) {
+            footer#contact {
+                padding: 24px 12px 26px
+            }
+
+            footer#contact .footer-logo {
+                height: 34px
+            }
+
+            footer#contact p {
+                font-size: 14px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER (site ile aynı) -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html#hero" class="logo-link" aria-label="Erjen Marketing home">
+                <img src="images/logo.png" alt="Erjen Marketing Logo" class="header-logo" />
+            </a>
+            <nav class="header-nav" aria-label="Hoofdmenu">
+                <a href="index.html#hero">Home</a>
+                <a href="OverOns.html">Over Ons</a>
+                <a href="index.html#diensten">Diensten</a>
+                <a href="index.html#projekten">Projekten</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="index.html#contact-form" class="cta-button">GRATIS SEO CHECK</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ANA İÇERİK -->
+    <main class="wrap">
+        <article class="seo-card" aria-labelledby="seo-title">
+            <div class="media">
+                <img src="images/websiteOnderhoud.webp" alt="Website onderhoud – veilig, snel en up-to-date">
+            </div>
+            <div class="content">
+                <h1 id="seo-title">Website Onderhoud</h1>
+
+                <h2>Zorgeloos online blijven</h2>
+                <p>
+                    Met ons onderhoudspakket blijft jouw website <strong>veilig, snel en up-to-date</strong>.
+                    Wij monitoren, updaten en beveiligen — zodat jij je kunt focussen op je bedrijf.
+                </p>
+
+                <h2>Wat zit erin?</h2>
+                <ul>
+                    <li><strong>Core/CMS &amp; plugin updates</strong> (WordPress e.d.) met eerst <em>staging</em>-test
+                    </li>
+                    <li><strong>Dagelijkse back-ups</strong> met 30–90 dagen retentie en snelle restore</li>
+                    <li><strong>Beveiliging:</strong> malware-scan, firewall, brute-force &amp; spam-bescherming</li>
+                    <li><strong>Monitoring:</strong> uptime (24/7), SSL, domein &amp; DNS-bewaking</li>
+                    <li><strong>Performance:</strong> caching, beeldoptimalisatie, database-opschoning</li>
+                    <li><strong>Technische support</strong> &amp; kleine content-wijzigingen per maand</li>
+                    <li><strong>Kwartaalrapport</strong> met status, verbeterpunten en workload</li>
+                    <li><strong>AVG/GDPR-check:</strong> cookie banner &amp; privacy-basics op orde</li>
+                    <li><strong>Optioneel:</strong> hosting, e-mail, CDN en WAF-opzet</li>
+                </ul>
+
+                <h2>Onderhoudsplannen</h2>
+                <ul>
+                    <li><strong>Basis</strong> — Updates, back-ups, beveiliging, uptime-monitoring</li>
+                    <li><strong>Pro</strong> — + Performance tuning, staging, maandelijkse fixes</li>
+                    <li><strong>Plus</strong> — + Prioritaire support, SLA &amp; uitgebreide rapportage</li>
+                </ul>
+
+                <p>We adviseren welk pakket het beste past bij jouw website, traffic en groeiplannen.</p>
+
+                <div class="cta-box">
+                    <p>🧰 <strong>Website zonder zorgen?</strong><br>
+                        Vraag een gratis onderhoudsscan aan. We checken snelheid, veiligheid en stabiliteit en sturen je
+                        een duidelijk plan.
+                    </p>
+                    <p>💬 <a href="index.html#contact-form">Neem nu contact met ons op en ontvang een vrijblijvende
+                            offerte.</a></p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="footer-content">
+            <img src="images/logo.png" alt="Erjen Marketing Logo" class="footer-logo" />
+            <p><a href="mailto:info@erjenmarketing.nl">info@erjenmarketing.nl</a></p>
+            <p><a href="tel:+31850049659">085 004 9659</a></p>
+            <p>Van Utrechtweg 20h, 2921 LN Krimpen aan den IJssel</p>
+            <p>KvK: 78617324</p>
+        </div>
+    </footer>
+</body>
+
+</html>

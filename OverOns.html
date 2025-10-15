@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Over Ons – Erjen Marketing</title>
+
+    <!-- Fonts & global -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Page-specific styles -->
+    <style>
+        :root {
+            --ink: #111;
+            --muted: #5f6370;
+            --red: #C1272D;
+            --bg: #f6f7f9;
+            --card: #fff;
+            --r: 22px;
+            --shadow: 0 14px 36px rgba(16, 24, 40, .10);
+            --line: #e9eaee;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Montserrat", system-ui, Segoe UI, Roboto, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--ink)
+        }
+
+        .wrap {
+            max-width: 1120px;
+            margin: 28px auto 64px;
+            padding: 0 20px
+        }
+
+        /* Hero */
+        .about-hero {
+            background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
+            border: 1px solid var(--line);
+            border-radius: var(--r);
+            box-shadow: var(--shadow);
+            padding: 28px 26px 26px;
+        }
+
+        .about-hero .chip {
+            display: inline-block;
+            background: #f1f2f5;
+            font-weight: 700;
+            font-size: 12px;
+            padding: 8px 10px;
+            border-radius: 999px;
+            margin-bottom: 8px
+        }
+
+        .about-hero h1 {
+            margin: 6px 0 6px;
+            font-size: clamp(28px, 3.6vw, 44px);
+            font-weight: 800
+        }
+
+        .about-hero p.lead {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.75
+        }
+
+        /* Body grid */
+        .about-body {
+            display: grid;
+            gap: 22px;
+            grid-template-columns: 1.25fr .95fr;
+            margin-top: 18px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: var(--r);
+            box-shadow: var(--shadow);
+            padding: 24px 26px;
+        }
+
+        .card p {
+            margin: 0 0 14px;
+            color: var(--muted);
+            line-height: 1.8
+        }
+
+        .side {
+            background: var(--card);
+            border-radius: var(--r);
+            box-shadow: var(--shadow);
+            padding: 22px 22px;
+        }
+
+        .side h3 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            font-weight: 800
+        }
+
+        .list {
+            display: grid;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+            list-style: none
+        }
+
+        .li {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            background: #fafafa;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 12px 14px;
+            color: var(--ink);
+            font-weight: 700;
+        }
+
+        .check {
+            width: 18px;
+            height: 18px;
+            flex: 0 0 18px
+        }
+
+        /* CTA */
+        .cta {
+            margin-top: 18px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-weight: 800;
+            text-decoration: none
+        }
+
+        .btn-primary {
+            background: var(--red);
+            color: #fff
+        }
+
+        .btn-ghost {
+            background: #f0f1f3;
+            color: #222
+        }
+
+        /* Footer (index ile aynı beyaz) */
+        footer#contact {
+            background: #fff;
+            color: var(--ink);
+            padding: 28px 16px 30px;
+            border-top: 1px solid var(--line)
+        }
+
+        footer#contact .footer-content {
+            max-width: 1120px;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px
+        }
+
+        footer#contact .footer-logo {
+            height: 38px;
+            margin-bottom: 6px;
+            display: block
+        }
+
+        footer#contact p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.5;
+            color: var(--muted)
+        }
+
+        footer#contact a {
+            color: var(--ink);
+            text-decoration: none;
+            font-weight: 600
+        }
+
+        @media (max-width:960px) {
+            .about-body {
+                grid-template-columns: 1fr
+            }
+        }
+
+        @media (max-width:520px) {
+            footer#contact {
+                padding: 24px 12px 26px
+            }
+
+            footer#contact .footer-logo {
+                height: 34px
+            }
+
+            footer#contact p {
+                font-size: 14px
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER (index ile aynı yapı) -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html#hero" class="logo-link" aria-label="Erjen Marketing home">
+                <img src="images/logo.png" alt="Erjen Marketing Logo" class="header-logo" />
+            </a>
+            <nav class="header-nav" aria-label="Hoofdmenu">
+                <a href="index.html#hero">Home</a>
+                <a href="OverOns.html">Over Ons</a>
+                <a href="index.html#diensten">Diensten</a>
+                <a href="index.html#projekten">Projecten</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="index.html#contact-form" class="cta-button">GRATIS SEO CHECK</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <!-- Hero -->
+        <section class="about-hero" aria-label="Over Erjen Marketing">
+            <span class="chip">Over Ons</span>
+            <h1>Erjen Marketing – Uw online marketing specialist</h1>
+            <p class="lead">
+                We geloven in het <strong>tornado-effect</strong>: wanneer alle energie en strategie samenkomen,
+                ontstaat er een krachtige beweging die zichzelf versterkt. Zo tillen wij jouw online zichtbaarheid
+                en verkoopresultaten naar een hoger niveau.
+            </p>
+        </section>
+
+        <!-- Body -->
+        <section class="about-body" aria-label="Onze aanpak">
+            <article class="card">
+                <p>
+                    Wij combineren <strong>SEO</strong>, <strong>Google Ads (SEA)</strong>, <strong>social
+                        media</strong>,
+                    <strong>online verkopen</strong> en <strong>webdesign</strong> om jouw bedrijf sneller en duurzamer
+                    te laten
+                    groeien. Met een aanpak die volledig inzichtelijk is via duidelijke KPI’s zorgen we ervoor dat je
+                    altijd grip
+                    houdt op je resultaten.
+                </p>
+                <p>
+                    Ons team is jouw partner in digitale groei. We denken met je mee, nemen ontwikkelingen en
+                    veranderingen in de
+                    markt serieus en vertalen die naar slimme, strategische stappen. Of het nu gaat om meer
+                    vindbaarheid, meer
+                    verkopen via je webshop, of het optimaal inzetten van je advertentiebudget – wij staan voor je
+                    klaar.
+                </p>
+
+                <div class="cta">
+                    <a class="btn btn-primary" href="index.html#contact-form">Contact opnemen</a>
+                    <a class="btn btn-ghost" href="index.html#diensten">Bekijk onze diensten</a>
+                </div>
+            </article>
+
+            <aside class="side" aria-label="Wat je van ons mag verwachten">
+                <h3>Wat je van ons mag verwachten</h3>
+                <ul class="list">
+                    <li class="li">
+                        <svg class="check" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 6L9 17l-5-5" stroke="#16a34a" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Snel en betrouwbaar samenwerken
+                    </li>
+                    <li class="li">
+                        <svg class="check" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 6L9 17l-5-5" stroke="#16a34a" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Heldere strategieën met focus op resultaat
+                    </li>
+                    <li class="li">
+                        <svg class="check" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 6L9 17l-5-5" stroke="#16a34a" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Slimme optimalisaties voor marketplaces en social media
+                    </li>
+                    <li class="li">
+                        <svg class="check" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 6L9 17l-5-5" stroke="#16a34a" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Creatieve content en conversiegerichte webdesigns
+                    </li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- CTA final -->
+        <section class="card" aria-label="Klaar voor de tornado?">
+            <h3 style="margin:0 0 8px; font-size:20px; font-weight:800">Klaar voor de tornado?</h3>
+            <p style="margin:0 0 14px; color:var(--muted); line-height:1.7">
+                Neem vandaag nog contact met ons op en ontdek hoe wij jouw groei <strong>meetbaar</strong> maken.
+            </p>
+            <a class="btn btn-primary" href="index.html#contact-form">Gratis adviesgesprek plannen</a>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="footer-content">
+            <img src="images/logo.png" alt="Erjen Marketing Logo" class="footer-logo" />
+            <p><a href="mailto:info@erjenmarketing.nl">info@erjenmarketing.nl</a></p>
+            <p><a href="tel:+31850049659">085 004 9659</a></p>
+            <p>Van Utrechtweg 20h, 2921 LN Krimpen aan den IJssel</p>
+            <p>KvK: 78617324</p>
+        </div>
+    </footer>
+</body>
+
+</html>
