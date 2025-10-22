@@ -65,40 +65,76 @@
             font-size: clamp(28px, 3vw, 42px);
             font-weight: 800;
             letter-spacing: .2px;
+            line-height: 1.2;
         }
 
         .seo-card p {
-            margin: 0 0 14px;
+            margin: 0 0 18px;
             color: var(--muted);
-            line-height: 1.75;
+            line-height: 1.8;
+            text-align: justify;
+            text-justify: inter-word;
         }
 
+        /* Sadece Erjen Marketing siyah ve kalın */
+        .seo-card p strong {
+            color: var(--ink);
+            font-weight: 700;
+        }
+
+        .seo-card ul {
+            margin: 0 0 16px 20px;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .seo-card li {
+            margin: 6px 0;
+        }
+
+        /* CTA kutusu */
         .cta-box {
-            margin-top: 18px;
-            padding: 18px 20px;
+            margin-top: 24px;
+            padding: 20px 24px;
             background: #fafafa;
             border-left: 6px solid var(--red);
-            border-radius: 12px;
+            border-radius: 14px;
+            line-height: 1.7;
         }
 
-        .cta-box a {
+        .cta-box p {
+            margin: 0 0 10px;
+            text-align: left;
+            color: var(--muted);
+        }
+
+        .cta-box p strong {
             color: var(--ink);
             font-weight: 800;
-            text-decoration: none;
         }
 
-        .cta-box a:focus-visible {
+        .cta-link {
+            text-decoration: none;
+            font-weight: 800;
+            color: var(--ink);
+        }
+
+        .cta-link:hover {
+            color: var(--red);
+        }
+
+        .cta-link:focus-visible {
             outline: 2px solid var(--red);
             outline-offset: 2px;
         }
 
         @media (max-width:600px) {
             .seo-card .content {
-                padding: 18px 18px 22px
+                padding: 18px 18px 22px;
             }
 
             .seo-card h1 {
-                margin-top: 2px
+                margin-top: 2px;
             }
         }
 
@@ -140,15 +176,15 @@
 
         @media (max-width:520px) {
             footer#contact {
-                padding: 24px 12px 26px
+                padding: 24px 12px 26px;
             }
 
             footer#contact .footer-logo {
-                height: 34px
+                height: 34px;
             }
 
             footer#contact p {
-                font-size: 14px
+                font-size: 14px;
             }
         }
     </style>
@@ -156,7 +192,7 @@
 
 <body>
 
-    <!-- HEADER (aynı kalıyor) -->
+    <!-- HEADER -->
     <header class="main-header">
         <div class="header-container">
             <a href="index.html#hero" class="logo-link" aria-label="Erjen Marketing home">
@@ -173,11 +209,10 @@
         </div>
     </header>
 
-    <!-- İÇERİK (aynı yapı; metinler Social Media’ya göre) -->
+    <!-- İÇERİK -->
     <main class="wrap">
         <article class="seo-card" aria-labelledby="social-title">
             <div class="media">
-                <!-- İstersen SEO.webp bırak; sosyal görsel kullanacaksan aşağıyı değiştir -->
                 <img src="images/socialMedia.webp" alt="Social Media – performance creatives & campagnes">
             </div>
 
@@ -188,18 +223,18 @@
                     opbouwt op
                     kanalen waar je doelgroep dagelijks actief is — zoals Instagram, Facebook, TikTok, LinkedIn en
                     YouTube. Met een
-                    slimme combinatie van organische content en <strong>gerichte advertenties</strong> zorgen we voor
+                    slimme combinatie van organische content en gerichte advertenties zorgen we voor
                     meetbare groei.</p>
 
-                <p>Meer dan <strong>4,5 miljard</strong> mensen gebruiken dagelijks social media. Social media negeren
-                    betekent dat je
-                    potentiële klanten rechtstreeks naar je concurrenten laat gaan.</p>
+                <p>Meer dan 4,5 miljard mensen gebruiken dagelijks social media. Social media negeren betekent dat je
+                    potentiële
+                    klanten rechtstreeks naar je concurrenten laat gaan.</p>
 
-                <p>Bij <strong>Erjen Marketing</strong> werken we data-gedreven en met <strong>performance
-                        creatives</strong>.
-                    We zetten jouw kanalen op of optimaliseren ze, inclusief contentplanning, community management,
-                    advertentiecampagnes (Meta &amp; TikTok Ads), pixel/Conversions API en duidelijke rapportage — alles
-                    van A tot Z geregeld.</p>
+                <p>Bij <strong>Erjen Marketing</strong> werken we data-gedreven en met performance
+                    creatives. We zetten jouw
+                    kanalen op of optimaliseren ze, inclusief contentplanning, community management,
+                    advertentiecampagnes (Meta &
+                    TikTok Ads), pixel/Conversions API en duidelijke rapportage — alles van A tot Z geregeld.</p>
 
                 <ul>
                     <li>Strategie &amp; contentplanning (formats, kalender, short-form video)</li>
@@ -210,16 +245,16 @@
                 </ul>
 
                 <div class="cta-box">
-                    <p>✅ <strong>Wij analyseren jouw huidige kanalen of zetten een helder startplan op.
-                            Social media check en adviesgesprek aanvragen?</strong></p>
-                    <p>💬 <a href="index.html#contact-form">Neem nu contact met ons op en ontvang een vrijblijvende
-                            offerte.</a></p>
+                    <p>✅ <strong>Wij analyseren jouw huidige kanalen of zetten een helder startplan op.</strong><br>
+                        Social media check en adviesgesprek aanvragen?</p>
+                    <p><a href="index.html#contact-form" class="cta-link">💬 Neem nu contact met ons op en ontvang een
+                            vrijblijvende offerte.</a></p>
                 </div>
             </div>
         </article>
     </main>
 
-    <!-- FOOTER (aynı) -->
+    <!-- FOOTER -->
     <footer id="contact">
         <div class="footer-content">
             <img src="images/logo.png" alt="Erjen Marketing Logo" class="footer-logo" />

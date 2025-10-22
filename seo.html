@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Sayfaya özel ufak stiller -->
+    <!-- Sayfaya özel stiller -->
     <style>
         :root {
             --ink: #111;
@@ -39,7 +39,7 @@
             padding: 0 20px;
         }
 
-        /* SEO kartı (resim üstte, metin altta) */
+        /* SEO kartı */
         .seo-card {
             background: var(--card);
             border-radius: var(--r);
@@ -68,26 +68,53 @@
             font-size: clamp(28px, 3vw, 42px);
             font-weight: 800;
             letter-spacing: .2px;
+            line-height: 1.2;
+        }
+
+        /* Paragraflar */
+        .seo-card .content {
+            font-size: 16.5px;
+            line-height: 1.8;
+            color: var(--ink);
         }
 
         .seo-card p {
-            margin: 0 0 14px;
+            margin: 0 0 18px;
             color: var(--muted);
-            line-height: 1.75;
+            text-align: justify;
+            text-justify: inter-word;
+            letter-spacing: .1px;
         }
 
+        .seo-card strong {
+            color: var(--ink);
+            font-weight: 700;
+        }
+
+        /* CTA kutusu */
         .cta-box {
-            margin-top: 18px;
-            padding: 18px 20px;
+            margin-top: 28px;
+            padding: 20px 24px;
             background: #fafafa;
             border-left: 6px solid var(--red);
-            border-radius: 12px;
+            border-radius: 14px;
+            line-height: 1.7;
+        }
+
+        .cta-box p {
+            text-align: left;
+            margin: 0 0 10px;
         }
 
         .cta-box a {
             color: var(--ink);
             font-weight: 800;
             text-decoration: none;
+            /* alt çizgi kaldırıldı */
+        }
+
+        .cta-box a:hover {
+            color: var(--red);
         }
 
         .cta-box a:focus-visible {
@@ -97,15 +124,21 @@
 
         @media (max-width:600px) {
             .seo-card .content {
-                padding: 18px 18px 22px
+                font-size: 15.5px;
+                line-height: 1.7;
+                padding: 18px 18px 22px;
+            }
+
+            .seo-card p {
+                text-align: left;
             }
 
             .seo-card h1 {
-                margin-top: 2px
+                margin-top: 2px;
             }
         }
 
-        /* Beyaz footer (index ile aynı görünüm) */
+        /* Footer */
         footer#contact {
             background: #fff;
             color: var(--ink);
@@ -144,15 +177,15 @@
 
         @media (max-width:520px) {
             footer#contact {
-                padding: 24px 12px 26px
+                padding: 24px 12px 26px;
             }
 
             footer#contact .footer-logo {
-                height: 34px
+                height: 34px;
             }
 
             footer#contact p {
-                font-size: 14px
+                font-size: 14px;
             }
         }
     </style>
@@ -160,7 +193,7 @@
 
 <body>
 
-    <!-- HEADER (index’teki menü ile) -->
+    <!-- HEADER -->
     <header class="main-header">
         <div class="header-container">
             <a href="index.html#hero" class="logo-link" aria-label="Erjen Marketing home">
@@ -177,29 +210,38 @@
         </div>
     </header>
 
-    <!-- ANA İÇERİK (Hero kaldırıldı) -->
+    <!-- ANA İÇERİK -->
     <main class="wrap">
         <article class="seo-card" aria-labelledby="seo-title">
             <div class="media">
                 <img src="images/SEO.webp" alt="SEO – zichtbaarheid vergroten">
             </div>
+
             <div class="content">
                 <h1 id="seo-title">Wat is SEO?</h1>
 
-                <p>Zoekmachineoptimalisatie (SEO) is een uitgebreid en strategisch proces dat ervoor zorgt dat jouw
+                <p>
+                    Zoekmachineoptimalisatie (SEO) is een uitgebreid en strategisch proces dat ervoor zorgt dat jouw
                     website zo hoog mogelijk verschijnt in de zoekresultaten van zoekmachines zoals Google. Hoe hoger je
-                    scoort, hoe zichtbaarder je bent — en dus trek je meer bezoekers aan.</p>
+                    scoort, hoe zichtbaarder je bent — en dus trek je meer bezoekers aan.
+                </p>
 
-                <p>Meer dan 80% van alle online zoektochten begint via een zoekmachine. SEO negeren betekent dat je
-                    potentiële klanten rechtstreeks naar je concurrenten laat gaan.</p>
+                <p>
+                    Meer dan 80% van alle online zoektochten begint via een zoekmachine. SEO negeren betekent dat je
+                    potentiële klanten rechtstreeks naar je concurrenten laat gaan.
+                </p>
 
-                <p>Helaas beloven veel bedrijven onrealistische resultaten zoals: “Wij krijgen je binnen een paar weken
+                <p>
+                    Helaas beloven veel bedrijven onrealistische resultaten zoals: “Wij krijgen je binnen een paar weken
                     op de eerste pagina van Google.” Laat je hierdoor niet misleiden — als het echt zo makkelijk was,
-                    zouden zoekmachines hun geloofwaardigheid verliezen.</p>
+                    zouden zoekmachines hun geloofwaardigheid verliezen.
+                </p>
 
-                <p>Bij <strong>Erjen Marketing</strong> maken we uitsluitend gebruik van ethische en up-to-date
+                <p>
+                    Bij <strong>Erjen Marketing</strong> maken we uitsluitend gebruik van ethische en up-to-date
                     SEO-technieken. We bieden duurzame oplossingen die volledig in lijn zijn met de algoritmes van
-                    zoekmachines, zodat jouw online zichtbaarheid op een veilige en effectieve manier toeneemt.</p>
+                    zoekmachines, zodat jouw online zichtbaarheid op een veilige en effectieve manier toeneemt.
+                </p>
 
                 <div class="cta-box">
                     <p>🎁 <strong>Gratis SEO-check en adviesgesprek aanvragen?</strong><br>

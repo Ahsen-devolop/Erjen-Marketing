@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SEO – Erjen Marketing</title>
+    <title>Online Verkopen – Erjen Marketing</title>
 
     <!-- Fonts & global -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Sayfaya özel ufak stiller (değiştirilmedi) -->
     <style>
         :root {
             --ink: #111;
@@ -38,6 +37,7 @@
             padding: 0 20px;
         }
 
+        /* Kart */
         .seo-card {
             background: var(--card);
             border-radius: var(--r);
@@ -62,44 +62,79 @@
         }
 
         .seo-card h1 {
-            margin: 6px 0 12px;
+            margin: 6px 0 14px;
             font-size: clamp(28px, 3vw, 42px);
             font-weight: 800;
             letter-spacing: .2px;
+            line-height: 1.2;
         }
 
         .seo-card p {
-            margin: 0 0 14px;
+            margin: 0 0 18px;
             color: var(--muted);
-            line-height: 1.75;
+            line-height: 1.8;
+            text-align: justify;
+            text-justify: inter-word;
         }
 
+        .seo-card strong {
+            color: var(--ink);
+            font-weight: 700;
+        }
+
+        .seo-card ul {
+            margin: 0 0 16px 20px;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .seo-card li {
+            margin: 6px 0;
+        }
+
+        /* CTA kutusu */
         .cta-box {
-            margin-top: 18px;
-            padding: 18px 20px;
+            margin-top: 24px;
+            padding: 20px 24px;
             background: #fafafa;
             border-left: 6px solid var(--red);
-            border-radius: 12px;
+            border-radius: 14px;
+            line-height: 1.7;
         }
 
-        .cta-box a {
+        .cta-box p {
+            margin: 0 0 10px;
+            text-align: left;
+            color: var(--muted);
+        }
+
+        .cta-box p strong {
             color: var(--ink);
             font-weight: 800;
-            text-decoration: none;
         }
 
-        .cta-box a:focus-visible {
+        .cta-link {
+            text-decoration: none;
+            font-weight: 800;
+            color: var(--ink);
+        }
+
+        .cta-link:hover {
+            color: var(--red);
+        }
+
+        .cta-link:focus-visible {
             outline: 2px solid var(--red);
             outline-offset: 2px;
         }
 
         @media (max-width:600px) {
             .seo-card .content {
-                padding: 18px 18px 22px
+                padding: 18px 18px 22px;
             }
 
             .seo-card h1 {
-                margin-top: 2px
+                margin-top: 2px;
             }
         }
 
@@ -141,15 +176,15 @@
 
         @media (max-width:520px) {
             footer#contact {
-                padding: 24px 12px 26px
+                padding: 24px 12px 26px;
             }
 
             footer#contact .footer-logo {
-                height: 34px
+                height: 34px;
             }
 
             footer#contact p {
-                font-size: 14px
+                font-size: 14px;
             }
         }
     </style>
@@ -157,7 +192,7 @@
 
 <body>
 
-    <!-- HEADER (değişmedi) -->
+    <!-- HEADER -->
     <header class="main-header">
         <div class="header-container">
             <a href="index.html#hero" class="logo-link" aria-label="Erjen Marketing home">
@@ -178,46 +213,45 @@
     <main class="wrap">
         <article class="seo-card" aria-labelledby="seo-title">
             <div class="media">
-                <!-- Görsel aynı bırakıldı; istersen images/online-verkopen.webp yapabilirsin -->
                 <img src="images/onlineVerkopen.webp" alt="Online verkopen – webshop en marketplaces" />
             </div>
+
             <div class="content">
                 <h1 id="seo-title">Wat doen we voor jouw online verkopen?</h1>
 
-                <p>
-                    We helpen je om meer omzet te halen via je <strong>eigen webshop</strong> (Shopify, WooCommerce) en
-                    <strong>marketplaces</strong> zoals Bol.com, Amazon en eBay. Met feed-beheer, listing-optimalisatie,
+                <p>We helpen je om meer omzet te halen via je eigen webshop (Shopify, WooCommerce) en
+                    marketplaces zoals Bol.com, Amazon en eBay. Met feed-beheer, listing-optimalisatie,
                     gerichte advertentiecampagnes en conversie-optimalisatie laten we jouw online verkoop groeien.
                 </p>
 
                 <ul>
-                    <li><strong>Kanaal- &amp; platformkeuze:</strong> Shopify, WooCommerce, Bol, Amazon, eBay</li>
-                    <li><strong>Productfeed &amp; catalogusbeheer</strong> (varianten, EAN, mapping, categorieën)</li>
+                    <li><strong>Kanaal &amp; platformkeuze:</strong> Shopify, WooCommerce, Bol, Amazon, eBay</li>
+                    <li><strong>Productfeed &amp; catalogusbeheer:</strong> (varianten, EAN, mapping, categorieën)</li>
                     <li><strong>Listing-SEO:</strong> titels, bullets, beschrijvingen, A+ content &amp; beeldrichtlijnen
                     </li>
                     <li><strong>Prijsstrategie:</strong> repricing, promoties, bundles, buy-box optimalisatie</li>
-                    <li><strong>Voorraad- &amp; orderkoppelingen</strong> (ERP/POS), fulfilment (FBA / LVB) advies</li>
+                    <li><strong>Voorraad- &amp; orderkoppelingen:</strong> (ERP/POS), fulfilment (FBA / LVB) advies</li>
                     <li><strong>Ads:</strong> Google Shopping &amp; Performance Max, Bol/Amazon Sponsored Products &amp;
                         Brands</li>
-                    <li><strong>Reviews &amp; ratings</strong> management, merkstore/brand registry</li>
+                    <li><strong>Reviews &amp; ratings:</strong> management, merkstore/brand registry</li>
                     <li><strong>Conversie-optimalisatie (CRO)</strong>, analytics &amp; dashboards (GA4, Conversions
                         API)</li>
                     <li><strong>Internationale uitrol:</strong> meertaligheid, BTW-regels, verzendzones</li>
                 </ul>
 
                 <div class="cta-box">
-                    <p><strong>🎁 Gratis online verkopen check &amp; advies?</strong><br>
+                    <p>🎁 <strong>Gratis online verkopen check &amp; advies?</strong><br>
                         We beoordelen je webshop, marketplaces en ads-setup en maken een kort actieplan — volledig
                         gratis.
                     </p>
-                    <p>💬 <a href="index.html#contact-form">Neem nu contact met ons op en ontvang een vrijblijvende
-                            offerte.</a></p>
+                    <p><a href="index.html#contact-form" class="cta-link">💬 Neem nu contact met ons op en ontvang een
+                            vrijblijvende offerte.</a></p>
                 </div>
             </div>
         </article>
     </main>
 
-    <!-- FOOTER (değişmedi) -->
+    <!-- FOOTER -->
     <footer id="contact">
         <div class="footer-content">
             <img src="images/logo.png" alt="Erjen Marketing Logo" class="footer-logo" />

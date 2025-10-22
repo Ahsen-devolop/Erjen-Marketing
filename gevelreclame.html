@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Sayfaya özel ufak stiller (yapı aynı) -->
+    <!-- Sayfaya özel (kart + tipografi aynı sistem) -->
     <style>
         :root {
             --ink: #111;
@@ -29,24 +29,24 @@
             margin: 0;
             font-family: "Montserrat", system-ui, Segoe UI, Roboto, Arial, sans-serif;
             color: var(--ink);
-            background: var(--bg);
+            background: var(--bg)
         }
 
         .wrap {
             max-width: 980px;
             margin: 28px auto 56px;
-            padding: 0 20px;
+            padding: 0 20px
         }
 
         .seo-card {
             background: var(--card);
             border-radius: var(--r);
             box-shadow: var(--shadow);
-            overflow: hidden;
+            overflow: hidden
         }
 
         .seo-card .media {
-            padding: 14px 14px 0;
+            padding: 14px 14px 0
         }
 
         .seo-card .media img {
@@ -54,49 +54,77 @@
             display: block;
             border-radius: 16px;
             object-fit: cover;
-            aspect-ratio: 16/9;
+            aspect-ratio: 16/9
         }
 
         .seo-card .content {
-            padding: 22px 24px 26px;
+            padding: 22px 24px 26px
         }
 
         .seo-card h1 {
-            margin: 6px 0 12px;
+            margin: 6px 0 14px;
             font-size: clamp(28px, 3vw, 42px);
             font-weight: 800;
             letter-spacing: .2px;
+            line-height: 1.2
         }
 
         .seo-card p {
-            margin: 0 0 14px;
+            margin: 0 0 18px;
             color: var(--muted);
-            line-height: 1.75;
+            line-height: 1.8;
+            text-align: justify;
+            text-justify: inter-word
+        }
+
+        .seo-card strong {
+            color: var(--ink);
+            font-weight: 700
         }
 
         .seo-card ul {
-            margin: 0 0 10px 18px;
+            margin: 0 0 16px 20px;
             color: var(--muted);
-            line-height: 1.7;
+            line-height: 1.7
+        }
+
+        .seo-card li {
+            margin: 6px 0
         }
 
         .cta-box {
-            margin-top: 18px;
-            padding: 18px 20px;
+            margin-top: 24px;
+            padding: 20px 24px;
             background: #fafafa;
             border-left: 6px solid var(--red);
-            border-radius: 12px;
+            border-radius: 14px;
+            line-height: 1.7
+        }
+
+        .cta-box p {
+            margin: 0 0 10px;
+            text-align: left;
+            color: var(--muted)
+        }
+
+        .cta-box p strong {
+            color: var(--ink);
+            font-weight: 800
         }
 
         .cta-box a {
             color: var(--ink);
-            font-weight: 800;
             text-decoration: none;
+            font-weight: 800
+        }
+
+        .cta-box a:hover {
+            color: var(--red)
         }
 
         .cta-box a:focus-visible {
             outline: 2px solid var(--red);
-            outline-offset: 2px;
+            outline-offset: 2px
         }
 
         @media (max-width:600px) {
@@ -107,13 +135,18 @@
             .seo-card h1 {
                 margin-top: 2px
             }
+
+            .seo-card p {
+                text-align: left
+            }
         }
 
+        /* Beyaz footer */
         footer#contact {
             background: #fff;
             color: var(--ink);
             padding: 28px 16px 30px;
-            border-top: 1px solid var(--line);
+            border-top: 1px solid var(--line)
         }
 
         footer#contact .footer-content {
@@ -123,26 +156,26 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 10px;
+            gap: 10px
         }
 
         footer#contact .footer-logo {
             height: 38px;
             margin-bottom: 6px;
-            display: block;
+            display: block
         }
 
         footer#contact p {
             margin: 0;
             font-size: 15px;
             line-height: 1.5;
-            color: var(--muted);
+            color: var(--muted)
         }
 
         footer#contact a {
             color: var(--ink);
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 600
         }
 
         @media (max-width:520px) {
@@ -162,7 +195,7 @@
 </head>
 
 <body>
-    <!-- HEADER (aynı) -->
+    <!-- HEADER (ortak) -->
     <header class="main-header">
         <div class="header-container">
             <a href="index.html#hero" class="logo-link" aria-label="Erjen Marketing home">
@@ -181,28 +214,28 @@
 
     <!-- ANA İÇERİK -->
     <main class="wrap">
-        <article class="seo-card" aria-labelledby="seo-title">
+        <article class="seo-card" aria-labelledby="gevel-title">
             <div class="media">
                 <img src="images/gevelreclame.webp"
                     alt="Gevelreclame – doosletters, lichtreclame, belettering en LED-displays">
             </div>
-            <div class="content">
-                <h1 id="seo-title">Wat doen we voor jouw gevelreclame?</h1>
 
-                <p>
-                    Met sterke gevelreclame val je dag én nacht op. We ontwerpen, produceren en monteren
-                    <strong>doosletters</strong>, <strong>lichtreclame</strong>, <strong>raam- en
-                        gevelbelettering</strong>,
-                    <strong>lichtbakken</strong> en <strong>LED-displays</strong> — volledig op maat van jouw pand en
+            <div class="content">
+                <h1 id="gevel-title">Wat doen we voor jouw gevelreclame?</h1>
+
+                <p>Met sterke gevelreclame val je dag én nacht op. We ontwerpen, produceren en monteren
+                    doosletters, lichtreclame, raam- en
+                    gevelbelettering,
+                    lichtbakken en LED-displays — volledig op maat van jouw pand en
                     huisstijl.
                     We zorgen voor een duurzame afwerking, perfecte montage en heldere zichtlijnen.
                 </p>
 
                 <ul>
-                    <li>Doosletters (acrylaat, RVS, aluminium) — verlicht / onverlicht</li>
+                    <li>Doosletters: (acrylaat, RVS, aluminium) — verlicht / onverlicht</li>
                     <li>Lichtreclame: LED-modules, lichtbakken, neon-look, outline</li>
                     <li>Raambelettering: zandstraal folie, privacy folie, full color prints</li>
-                    <li>Gevelbelettering &amp; panelen (Dibond, geanodiseerd, poedercoat)</li>
+                    <li>Gevelbelettering &amp; panelen:(Dibond, geanodiseerd, poedercoat)</li>
                     <li>Projectie, pylonen &amp; wayfinding — binnen &amp; buiten</li>
                     <li>Montage op hoogte, maatwerk beugels &amp; constructieadvies</li>
                     <li>Vergunningstraject &amp; tekeningen voor gemeente indien nodig</li>
@@ -211,25 +244,23 @@
                     <li>Zuinig &amp; veilig: IP-score, brandklasse, CE en garantie</li>
                 </ul>
 
-                <p>
-                    We denken mee over lichtsterkte, leesafstand, materialen en positionering. Resultaat:
-                    <strong>maximale zichtbaarheid</strong>, een professionele uitstraling en <strong>meer
-                        inloop</strong>.
+                <p>We denken mee over lichtsterkte, leesafstand, materialen en positionering. Resultaat:
+                    maximale zichtbaarheid, een professionele uitstraling en meer
+                    inloop.
                 </p>
 
                 <div class="cta-box">
                     <p>🧭 <strong>Gratis gevelreclame check &amp; advies?</strong><br>
                         We komen langs of werken op basis van foto’s/tekeningen en maken een voorstel met visuals en
-                        prijsindicatie — geheel gratis.
-                    </p>
-                    <p>💬 <a href="index.html#contact-form">Neem nu contact met ons op en ontvang een vrijblijvende
-                            offerte.</a></p>
+                        prijsindicatie — geheel gratis.</p>
+                    <p><a href="index.html#contact-form" class="cta-link">💬 Neem nu contact met ons op en ontvang een
+                            vrijblijvende offerte.</a></p>
                 </div>
             </div>
         </article>
     </main>
 
-    <!-- FOOTER (aynı) -->
+    <!-- FOOTER -->
     <footer id="contact">
         <div class="footer-content">
             <img src="images/logo.png" alt="Erjen Marketing Logo" class="footer-logo" />

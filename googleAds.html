@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Sayfaya özel stiller (SEO sayfasıyla aynı yapı) -->
+    <!-- Sayfaya özel stiller -->
     <style>
         :root {
             --ink: #111;
@@ -68,32 +68,53 @@
             font-size: clamp(28px, 3vw, 42px);
             font-weight: 800;
             letter-spacing: .2px;
+            line-height: 1.2;
         }
 
-        .ads-card h2 {
-            margin: 0 0 14px;
-            font-size: clamp(20px, 2.2vw, 26px);
+        /* Tipografi düzeni */
+        .ads-card .content {
+            font-size: 16.5px;
+            line-height: 1.8;
+            color: var(--ink);
         }
 
         .ads-card p {
-            margin: 0 0 14px;
+            margin: 0 0 18px;
             color: var(--muted);
-            line-height: 1.75;
+            text-align: justify;
+            text-justify: inter-word;
+            letter-spacing: .1px;
+        }
+
+        .ads-card strong {
+            color: var(--ink);
+            font-weight: 700;
         }
 
         /* CTA kutusu */
         .cta-box {
-            margin-top: 18px;
-            padding: 18px 20px;
+            margin-top: 28px;
+            padding: 20px 24px;
             background: #fafafa;
             border-left: 6px solid var(--red);
-            border-radius: 12px;
+            border-radius: 14px;
+            line-height: 1.7;
+        }
+
+        .cta-box p {
+            text-align: left;
+            margin: 0 0 10px;
         }
 
         .cta-box a {
             color: var(--ink);
             font-weight: 800;
             text-decoration: none;
+            /* alt çizgiyi kaldırdık */
+        }
+
+        .cta-box a:hover {
+            color: var(--red);
         }
 
         .cta-box a:focus-visible {
@@ -101,17 +122,23 @@
             outline-offset: 2px;
         }
 
-        @media (max-width:600px) {
+        @media(max-width:600px) {
             .ads-card .content {
-                padding: 18px 18px 22px
+                font-size: 15.5px;
+                line-height: 1.7;
+                padding: 18px 18px 22px;
+            }
+
+            .ads-card p {
+                text-align: left;
             }
 
             .ads-card h1 {
-                margin-top: 2px
+                margin-top: 2px;
             }
         }
 
-        /* Beyaz footer (index ile aynı) */
+        /* Beyaz footer */
         footer#contact {
             background: #fff;
             color: var(--ink);
@@ -148,17 +175,17 @@
             font-weight: 600;
         }
 
-        @media (max-width:520px) {
+        @media(max-width:520px) {
             footer#contact {
-                padding: 24px 12px 26px
+                padding: 24px 12px 26px;
             }
 
             footer#contact .footer-logo {
-                height: 34px
+                height: 34px;
             }
 
             footer#contact p {
-                font-size: 14px
+                font-size: 14px;
             }
         }
     </style>
@@ -166,7 +193,7 @@
 
 <body>
 
-    <!-- HEADER (seo.html ile aynı menü) -->
+    <!-- HEADER -->
     <header class="main-header">
         <div class="header-container">
             <a href="index.html#hero" class="logo-link" aria-label="Erjen Marketing home">
@@ -183,34 +210,42 @@
         </div>
     </header>
 
-    <!-- ANA İÇERİK (hero yok; kart düzeni) -->
+    <!-- ANA İÇERİK -->
     <main class="wrap">
         <article class="ads-card" aria-labelledby="ads-title">
             <div class="media">
                 <img src="images/googleAds.webp" alt="Google Ads – advertentieplatform">
             </div>
+
             <div class="content">
                 <h1 id="ads-title">Wat is Google Ads?</h1>
 
-                <h2>Wat is Google Ads?</h2>
-                <p>Google Ads is het advertentieplatform van Google waarmee bedrijven betaalde campagnes kunnen inzetten
+                <p>
+                    Google Ads is het advertentieplatform van Google waarmee bedrijven betaalde campagnes kunnen
+                    inzetten
                     om direct zichtbaar te zijn in de zoekresultaten. Terwijl SEO zich richt op organische groei, geeft
                     Google Ads je de mogelijkheid om met betaalde advertenties bovenaan te staan — precies op het moment
-                    dat je doelgroep zoekt naar jouw product of dienst.</p>
+                    dat je doelgroep zoekt naar jouw product of dienst.
+                </p>
 
-                <p>Het voordeel van Google Ads is snelheid en meetbaarheid. Binnen enkele dagen kun je nieuwe klanten
-                    bereiken, en je betaalt alleen wanneer iemand daadwerkelijk op je advertentie klikt.</p>
+                <p>
+                    Het voordeel van Google Ads is snelheid en meetbaarheid. Binnen enkele dagen kun je nieuwe klanten
+                    bereiken, en je betaalt alleen wanneer iemand daadwerkelijk op je advertentie klikt.
+                </p>
 
-                <p>Bij <strong>Erjen Marketing</strong> beheren we jouw campagnes van A tot Z: van zoekwoordenonderzoek
+                <p>
+                    Bij <strong>Erjen Marketing</strong> beheren we jouw campagnes van A tot Z: van zoekwoordenonderzoek
                     en advertentieteksten tot biedstrategieën en conversie-optimalisatie. Zo zorgen we ervoor dat je
-                    budget efficiënt wordt besteed en maximaal rendement oplevert.</p>
+                    budget efficiënt wordt besteed en maximaal rendement oplevert.
+                </p>
 
                 <div class="cta-box">
                     <p>📊 <strong>Gratis Google Ads-check aanvragen?</strong><br>
                         Wij analyseren jouw huidige campagnes of zetten een compleet nieuwe structuur op, inclusief een
-                        gepersonaliseerd plan — volledig gratis!</p>
-                    <p class="cta-line"><a href="index.html#contact-form">💬 Neem nu contact met ons op en ontvang een
-                            vrijblijvende offerte.</a></p>
+                        gepersonaliseerd plan — volledig gratis!
+                    </p>
+                    <p><a href="index.html#contact-form">💬 Neem nu contact met ons op en ontvang een vrijblijvende
+                            offerte.</a></p>
                 </div>
             </div>
         </article>

@@ -181,7 +181,7 @@
             outline-offset: 4px
         }
 
-        /* ===== Footer (beyaz sürüm) - birinci dosyayla aynı ===== */
+        /* Footer (white) */
         footer#contact {
             background: #fff;
             color: #111;
@@ -231,30 +231,30 @@
                 font-size: 14px;
             }
         }
-
-        /* ===== /Footer ===== */
     </style>
 </head>
 
 <body>
-
-    <!-- HEADER -->
+    <!-- HEADER (index/SEO ile birebir) -->
     <header class="main-header">
         <div class="header-container">
-            <img src="images/logo.png" alt="Erjen Marketing Logo" class="header-logo" />
-            <nav class="header-nav">
+            <a href="index.html#hero" class="logo-link" aria-label="Erjen Marketing home">
+                <img src="images/logo.png" alt="Erjen Marketing Logo" class="header-logo" />
+            </a>
+            <nav class="header-nav" aria-label="Hoofdmenu">
                 <a href="index.html#hero">Home</a>
+                <a href="OverOns.html">Over Ons</a>
                 <a href="index.html#diensten">Diensten</a>
-                <a href="index.html#onze-werken">Onze Werken</a>
+                <a href="index.html#projekten">Projekten</a>
                 <a href="index.html#contact">Contact</a>
-                <a href="index.html#gratis" class="cta-button">GRATIS SEO CHECK</a>
+                <a href="index.html#contact-form" class="cta-button">GRATIS SEO CHECK</a>
             </nav>
         </div>
     </header>
 
     <!-- Back link -->
     <div class="container" style="margin-top:1rem;">
-        <a class="back" href="index.html#onze-werken">← Terug naar Projecten</a>
+        <a class="back" href="index.html#projekten">← Terug naar Projecten</a>
     </div>
 
     <!-- OVERVIEW -->
@@ -350,7 +350,7 @@
         <img id="lightboxImg" alt="Preview">
     </div>
 
-    <!-- FOOTER (beyaz sürüm, birinci dosyayla aynı) -->
+    <!-- FOOTER -->
     <footer id="contact">
         <div class="footer-content">
             <img src="images/logo.png" alt="Erjen Marketing Logo" class="footer-logo" />

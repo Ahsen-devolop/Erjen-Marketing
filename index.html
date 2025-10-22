@@ -4,20 +4,25 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Erjen Marketing – De Online Marketing Gigant</title>
-
-    <!-- Fonts & CSS -->
+    <title>Erjen Marketing – De Online Marketing Gigant</title> <!-- Fonts & CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-
-    <!-- Başlık hizası ve FOOTER (beyaz sürüm) -->
     <style>
         :root {
             --ink: #111;
             --muted: #5f6370;
             --line: #e9eaee;
+            --header-h: 72px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        [id] {
+            scroll-margin-top: var(--header-h);
         }
 
         .wat-wij-doen-section .wwd-title2,
@@ -40,7 +45,6 @@
             }
         }
 
-        /* Footer (beyaz) — LOGO ve içerik aynı */
         footer#contact {
             background: #fff;
             color: var(--ink);
@@ -93,295 +97,324 @@
     </style>
 </head>
 
+
+
 <body>
-    <!-- HEADER -->
-    <header class="main-header">
-        <div class="header-container">
-            <img src="images/logo.png" alt="Erjen Marketing Logo" class="header-logo" />
-            <nav class="header-nav">
-                <a href="#hero">Home</a>
-                <a href="OverOns.html">Over Ons</a>
-                <a href="#diensten">Diensten</a>
-                <a href="#projekten">Projekten</a>
-                <a href="#contact">Contact</a>
-                <a href="#contact-form" class="cta-button">GRATIS SEO CHECK</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- HERO -->
-    <section class="hero-neo" id="hero">
-        <div class="hero-neo__inner">
-            <div class="hero-neo__copy">
-                <span class="chip">SEO • SEA • SM PLATFORMS • ONLINE VERKOPEN • GEVELRECLAME • WEBDESIGN</span>
-                <h1>Uw groei <span class="accent">meetbaar</span> maken</h1>
-                <p>
-                    Wij combineren <strong>SEO</strong>, <strong>Google Ads (SEA)</strong>,
-                    <strong>social media</strong>, <strong>online verkopen</strong> en <strong>webdesign</strong>
-                    om sneller en duurzaam resultaat te leveren — volledig inzichtelijk met duidelijke KPI’s.
-                </p>
-                <ul class="hero-list">
-                    <li>Technische SEO-audit, contentstrategie & linkbuilding</li>
-                    <li>SEA-campagnes (Search, Performance Max, Remarketing)</li>
-                    <li>Social media beheer & performance creatives</li>
-                    <li>Marketplace optimalisatie (Bol, Amazon, eBay)</li>
-                    <li>Conversie-optimalisatie (CRO) & snelle, veilige hosting</li>
-                </ul>
+    <main>
+        <!-- HEADER -->
+        <header class="main-header">
+            <div class="header-container"> <a href="index.html" class="logo-link" aria-label="Erjen Marketing home">
+                    <img src="images/logo.png" alt="Erjen Marketing Logo" class="header-logo" /> </a>
+                <nav class="header-nav" aria-label="Hoofdmenu"> <a href="index.html">Home</a> <a
+                        href="OverOns.html">Over
+                        Ons</a> <a href="#diensten">Diensten</a> <a href="#projekten">Projekten</a> <a
+                        href="#pakketten">Pakketten</a> <a href="#contact-form">Contact</a> <a href="#contact-form"
+                        class="cta-button">GRATIS SEO CHECK</a> </nav>
             </div>
-        </div>
-    </section>
-
-    <!-- KPI (tamamen statik) -->
-    <section class="kpi-strip" aria-label="Kerncijfers">
-        <div class="kpi-inner">
-            <div class="kpi">
-                <strong>40+</strong>
-                <span>Projecten</span>
-            </div>
-            <div class="kpi">
-                <strong>50+</strong>
-                <span>Klanten</span>
-            </div>
-            <div class="kpi">
-                <strong>8+</strong>
-                <span>Sectoren bediend</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- WAT WIJ DOEN -->
-    <section class="wat-wij-doen-section" id="wat-wij-doen">
-        <div class="wwd-card">
-            <h2 class="wwd-title2">
-                <span>WAT</span>
-                <span>WIJ</span>
-                <span class="accent">DOEN</span>
-            </h2>
-            <p class="wwd-sub2">Wij zijn een digitaal marketingbureau dat het volgende aanbiedt.</p>
-        </div>
-    </section>
-
-    <!-- DIENSTEN -->
-    <section class="services-section" id="diensten">
-        <div class="services-grid">
-            <div class="service-card">
-                <img src="images/1.webp" alt="SEO" />
-                <h3>SEO</h3>
-                <p>Boost je online zichtbaarheid met onze professionele SEO-diensten.</p>
-                <a href="seo.html" class="read-more-button">Lees meer</a>
-            </div>
-            <div class="service-card">
-                <img src="images/2.webp" alt="Google Ads" />
-                <h3>Google Ads</h3>
-                <p>Trek gerichte bezoekers met effectieve advertentiecampagnes.</p>
-                <a href="googleAds.html" class="read-more-button">Lees meer</a>
-            </div>
-            <div class="service-card">
-                <img src="images/3.webp" alt="Content Creatie" />
-                <h3>Content Creatie</h3>
-                <p>Creëer boeiende content die vertrouwen opbouwt en converteert.</p>
-                <a href="contentCreatie.html" class="read-more-button">Lees meer</a>
-            </div>
-            <div class="service-card">
-                <img src="images/4.webp" alt="Social Media" />
-                <h3>Social Media</h3>
-                <p>Groei op Instagram, Facebook, TikTok en meer met slimme strategieën.</p>
-                <a href="socialMedia.html" class="read-more-button">Lees meer</a>
-            </div>
-            <div class="service-card">
-                <img src="images/5.webp" alt="Online Verkopen" />
-                <h3>Online Verkopen</h3>
-                <p>Verhoog je verkoop via Bol.com, Amazon of Ebay met onze slimme strategieën.</p>
-                <a href="onlineVerkopen.html" class="read-more-button">Lees meer</a>
-            </div>
-            <div class="service-card">
-                <img src="images/6.webp" alt="Webdesign" />
-                <h3>Webdesign</h3>
-                <p>Een moderne website die snel, mobielvriendelijk en conversiegericht is.</p>
-                <a href="webdesign.html" class="read-more-button">Lees meer</a>
-            </div>
-            <div class="service-card">
-                <img src="images/7.webp" alt="Gevelreclame" />
-                <h3>Gevelreclame</h3>
-                <p>Doosletters, belettering en LED-displays met maximale zichtbaarheid.</p>
-                <a href="gevelreclame.html" class="read-more-button">Lees meer</a>
-            </div>
-            <div class="service-card">
-                <img src="images/8.webp" alt="Website Onderhoud" />
-                <h3>Website Onderhoud</h3>
-                <p>Updates, back-ups, beveiliging en performance – zorgeloos onderhoud.</p>
-                <a href="websiteOnderhoud.html" class="read-more-button">Lees meer</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ONZE PROJECTEN (başlık) -->
-    <section class="our-work-title wat-wij-doen-section" id="projekten">
-        <div class="wwd-card">
-            <h2 class="wwd-title2">
-                <span>ONZE</span>
-                <span class="accent">PROJECTEN</span>
-            </h2>
-            <p class="wwd-sub2">Een greep uit ons werk.</p>
-        </div>
-    </section>
-
-    <!-- ONZE PROJECTEN (galeri) -->
-    <section class="portfolio-gallery" id="onze-werken">
-        <div class="project-card">
-            <a href="branding.html" class="project-link">
-                <img src="images/A.webp" alt="Project 1" class="project-image">
-                <div class="project-overlay">
-                    <h3 class="project-title">Klantcase: Kraamzorg Eerste Week</h3>
-                    <p class="project-description">Complete huisstijl: autobelettering, raambelettering, drukwerk &
-                        promotie</p>
+        </header> <!-- HERO -->
+        <section class="hero-neo" id="hero">
+            <div class="hero-neo__inner">
+                <div class="hero-neo__copy"> <span class="chip">SEO • SEA • SM PLATFORMS • ONLINE VERKOPEN •
+                        GEVELRECLAME •
+                        WEBDESIGN</span>
+                    <h1>Uw groei <span class="accent">meetbaar</span> maken</h1>
+                    <p> Wij combineren <strong>SEO</strong>, <strong>Google Ads (SEA)</strong>, <strong>social
+                            media</strong>, <strong>online verkopen</strong> en <strong>webdesign</strong> om sneller en
+                        duurzaam resultaat te leveren — volledig inzichtelijk met duidelijke KPI’s. </p>
+                    <ul class="hero-list">
+                        <li>Technische SEO-audit, contentstrategie & linkbuilding</li>
+                        <li>SEA-campagnes (Search, Performance Max, Remarketing)</li>
+                        <li>Social media beheer & performance creatives</li>
+                        <li>Marketplace optimalisatie (Bol, Amazon, eBay)</li>
+                        <li>Conversie-optimalisatie (CRO) & snelle, veilige hosting</li>
+                    </ul>
                 </div>
-            </a>
-        </div>
-
-        <div class="project-card">
-            <a href="erjen2.html" class="project-link">
-                <img src="images/B.webp" alt="Project 2" class="project-image">
-                <div class="project-overlay">
-                    <h3 class="project-title">Klantcase: Infinitas Care</h3>
-                    <p class="project-description">Nieuwe visuele identiteit: lichtreclame, raambelettering en
-                        gevelreclame</p>
+            </div>
+        </section> <!-- KPI -->
+        <section class="kpi-strip" aria-label="Kerncijfers">
+            <div class="kpi-inner">
+                <div class="kpi"><strong>40+</strong><span>Projecten</span></div>
+                <div class="kpi"><strong>50+</strong><span>Klanten</span></div>
+                <div class="kpi"><strong>8+</strong><span>Sectoren bediend</span></div>
+            </div>
+        </section> <!-- WAT WIJ DOEN -->
+        <section class="wat-wij-doen-section" id="wat-wij-doen">
+            <div class="wwd-card">
+                <h2 class="wwd-title2"><span>WAT</span><span>WIJ</span><span class="accent">DOEN</span></h2>
+                <p class="wwd-sub2">Wij zijn een digitaal marketingbureau dat het volgende aanbiedt.</p>
+            </div>
+        </section> <!-- DIENSTEN -->
+        <section class="services-section" id="diensten">
+            <div class="services-grid">
+                <div class="service-card"> <img src="images/1.webp" alt="SEO" />
+                    <h3>SEO</h3>
+                    <p>Boost je online zichtbaarheid met onze professionele SEO-diensten.</p> <a href="seo.html"
+                        class="read-more-button">Lees meer</a>
                 </div>
-            </a>
-        </div>
-
-        <div class="project-card">
-            <a href="erjen3.html" class="project-link">
-                <img src="images/C.webp" alt="Project 3" class="project-image">
-                <div class="project-overlay">
-                    <h3 class="project-title">Klantcase: Avrasya Chicken Doner</h3>
-                    <p class="project-description">Complete branding: lichtreclame, raamwebelettering en huisstijl
-                        drukwerk</p>
+                <div class="service-card"> <img src="images/2.webp" alt="Google Ads" />
+                    <h3>Google Ads</h3>
+                    <p>Trek gerichte bezoekers met effectieve advertentiecampagnes.</p> <a href="googleAds.html"
+                        class="read-more-button">Lees meer</a>
                 </div>
-            </a>
-        </div>
-
-        <div class="project-card">
-            <a href="erjen4.html" class="project-link">
-                <img src="images/D.webp" alt="Project 4" class="project-image">
-                <div class="project-overlay">
-                    <h3 class="project-title">Klantcase: Recrewters</h3>
-                    <p class="project-description">Lichtreclame op hoog gebouw voor maximale zichtbaarheid.</p>
+                <div class="service-card"> <img src="images/3.webp" alt="Content Creatie" />
+                    <h3>Content Creatie</h3>
+                    <p>Creëer boeiende content die vertrouwen opbouwt en converteert.</p> <a href="contentCreatie.html"
+                        class="read-more-button">Lees meer</a>
                 </div>
-            </a>
-        </div>
-
-        <div class="project-card">
-            <a href="erjen5.html" class="project-link">
-                <img src="images/E.webp" alt="Project 5" class="project-image">
-                <div class="project-overlay">
-                    <h3 class="project-title">Klantcase: Tandarts West</h3>
-                    <p class="project-description">Moderne en professionele uitstraling met verlichte doosletters.</p>
+                <div class="service-card"> <img src="images/4.webp" alt="Social Media" />
+                    <h3>Social Media</h3>
+                    <p>Groei op Instagram, Facebook, TikTok en meer met slimme strategieën.</p> <a
+                        href="socialMedia.html" class="read-more-button">Lees meer</a>
                 </div>
-            </a>
-        </div>
-
-        <div class="project-card">
-            <a href="erjen6.html" class="project-link">
-                <img src="images/F.webp" alt="Project 6" class="project-image">
-                <div class="project-overlay">
-                    <h3 class="project-title">Klantcase: De Kroon Wonen & Slapen</h3>
-                    <p class="project-description">Lichtreclame, raambelettering en uniforme winkelgevel.</p>
+                <div class="service-card"> <img src="images/5.webp" alt="Online Verkopen" />
+                    <h3>Online Verkopen</h3>
+                    <p>Verhoog je verkoop via Bol.com, Amazon of Ebay met onze slimme strategieën.</p> <a
+                        href="onlineVerkopen.html" class="read-more-button">Lees meer</a>
                 </div>
-            </a>
-        </div>
-
-        <div class="project-card">
-            <a href="erjen7.html" class="project-link">
-                <img src="images/G.webp" alt="Project 7" class="project-image">
-                <div class="project-overlay">
-                    <h3 class="project-title">Klantcase: LED Display Solutions</h3>
-                    <p class="project-description">Indoor/outdoor LED schermen, totems en etalage displays.</p>
+                <div class="service-card"> <img src="images/6.webp" alt="Webdesign" />
+                    <h3>Webdesign</h3>
+                    <p>Een moderne website die snel, mobielvriendelijk en conversiegericht is.</p> <a
+                        href="webdesign.html" class="read-more-button">Lees meer</a>
                 </div>
-            </a>
-        </div>
-
-        <div class="project-card">
-            <a href="erjen8.html" class="project-link">
-                <img src="images/H.webp" alt="Project 8" class="project-image">
-                <div class="project-overlay">
-                    <h3 class="project-title">Klantcase: ICTS</h3>
-                    <p class="project-description">Promotie & huisstijl: drukwerk, merchandising en gadgets.</p>
+                <div class="service-card"> <img src="images/7.webp" alt="Gevelreclame" />
+                    <h3>Gevelreclame</h3>
+                    <p>Doosletters, belettering en LED-displays met maximale zichtbaarheid.</p> <a
+                        href="gevelreclame.html" class="read-more-button">Lees meer</a>
                 </div>
-            </a>
-        </div>
-
-        <div class="project-card">
-            <a href="erjen9.html" class="project-link">
-                <img src="images/I.webp" alt="Project 9" class="project-image">
-                <div class="project-overlay">
-                    <h3 class="project-title">Klantcase: Elysee Schoonheidssalon</h3>
-                    <p class="project-description">Binnenreclame: luxe wandbord met gouden afwerking.</p>
+                <div class="service-card"> <img src="images/8.webp" alt="Website Onderhoud" />
+                    <h3>Website Onderhoud</h3>
+                    <p>Updates, back-ups, beveiliging en performance – zorgeloos onderhoud.</p> <a
+                        href="websiteOnderhoud.html" class="read-more-button">Lees meer</a>
                 </div>
-            </a>
-        </div>
-    </section>
-
-    <!-- CONTACT FORM -->
-    <section class="contact-cta" id="contact-form">
-        <div class="contact-cta__inner">
-            <h2 class="contact-title">
-                <span>NEEM</span>
-                <span>CONTACT</span>
-                <span class="accent">OP</span>
-            </h2>
-            <p class="contact-cta__lead">
-                Vragen over een project of offerte? Stuur ons een bericht – we reageren meestal binnen één werkdag.
-            </p>
-
-            <form class="em-form" action="https://formspree.io/f/your-endpoint" method="POST" id="emContactForm"
-                novalidate>
-                <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp-field" aria-hidden="true">
-                <div class="em-grid">
-                    <div class="em-field">
-                        <label for="emName">Naam*</label>
-                        <input id="emName" name="name" type="text" placeholder="Je naam" required autocomplete="name">
+            </div>
+        </section> <!-- PROJECTEN -->
+        <section class="our-work-title wat-wij-doen-section" id="projekten">
+            <div class="wwd-card">
+                <h2 class="wwd-title2"><span>ONZE</span><span class="accent">PROJECTEN</span></h2>
+                <p class="wwd-sub2">Een greep uit ons werk.</p>
+            </div>
+        </section>
+        <section class="portfolio-gallery" id="onze-werken">
+            <div class="project-card"> <a href="branding.html" class="project-link"> <img src="images/A.webp"
+                        alt="Project 1" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Klantcase: Kraamzorg Eerste Week</h3>
+                        <p class="project-description">Complete huisstijl: autobelettering, raambelettering, drukwerk &
+                            promotie</p>
                     </div>
-                    <div class="em-field">
-                        <label for="emEmail">E-mail*</label>
-                        <input id="emEmail" name="email" type="email" placeholder="jij@bedrijf.nl" required
-                            autocomplete="email">
+                </a> </div>
+            <div class="project-card"> <a href="erjen2.html" class="project-link"> <img src="images/B.webp"
+                        alt="Project 2" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Klantcase: Infinitas Care</h3>
+                        <p class="project-description">Nieuwe visuele identiteit: lichtreclame, raambelettering en
+                            gevelreclame</p>
                     </div>
-                </div>
-
-                <div class="em-grid">
-                    <div class="em-field">
-                        <label for="emPhone">Telefoon</label>
-                        <input id="emPhone" name="phone" type="tel" placeholder="+31 6 …" autocomplete="tel">
+                </a> </div>
+            <div class="project-card"> <a href="erjen3.html" class="project-link"> <img src="images/C.webp"
+                        alt="Project 3" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Klantcase: Avrasya Chicken Doner</h3>
+                        <p class="project-description">Complete branding: lichtreclame, raamwebelettering en huisstijl
+                            drukwerk</p>
                     </div>
-                    <div class="em-field">
-                        <label for="emSubject">Onderwerp</label>
-                        <input id="emSubject" name="subject" type="text" placeholder="Waarmee kunnen we helpen?">
+                </a> </div>
+            <div class="project-card"> <a href="erjen4.html" class="project-link"> <img src="images/D.webp"
+                        alt="Project 4" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Klantcase: Recrewters</h3>
+                        <p class="project-description">Lichtreclame op hoog gebouw voor maximale zichtbaarheid.</p>
                     </div>
+                </a> </div>
+            <div class="project-card"> <a href="erjen5.html" class="project-link"> <img src="images/E.webp"
+                        alt="Project 5" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Klantcase: Tandarts West</h3>
+                        <p class="project-description">Moderne en professionele uitstraling met verlichte doosletters.
+                        </p>
+                    </div>
+                </a> </div>
+            <div class="project-card"> <a href="erjen6.html" class="project-link"> <img src="images/F.webp"
+                        alt="Project 6" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Klantcase: De Kroon Wonen & Slapen</h3>
+                        <p class="project-description">Lichtreclame, raambelettering en uniforme winkelgevel.</p>
+                    </div>
+                </a> </div>
+            <div class="project-card"> <a href="erjen7.html" class="project-link"> <img src="images/G.webp"
+                        alt="Project 7" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Klantcase: LED Display Solutions</h3>
+                        <p class="project-description">Indoor/outdoor LED schermen, totems en etalage displays.</p>
+                    </div>
+                </a> </div>
+            <div class="project-card"> <a href="erjen8.html" class="project-link"> <img src="images/H.webp"
+                        alt="Project 8" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Klantcase: ICTS</h3>
+                        <p class="project-description">Promotie & huisstijl: drukwerk, merchandising en gadgets.</p>
+                    </div>
+                </a> </div>
+            <div class="project-card"> <a href="erjen9.html" class="project-link"> <img src="images/I.webp"
+                        alt="Project 9" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Klantcase: Elysee Schoonheidssalon</h3>
+                        <p class="project-description">Binnenreclame: luxe wandbord met gouden afwerking.</p>
+                    </div>
+                </a> </div>
+        </section> <!-- PRIJZEN / PAKKETTEN -->
+        <section class="pricing" id="pakketten" aria-label="Marketing & Webpakketten">
+            <div class="pricing__head wwd-card">
+                <h2 class="wwd-title2"> <span>MARKETING &</span> <span class="accent">WEBPAKKETTEN</span> </h2>
+                <p class="pricing__sub">Kies een pakket of vraag een offerte op maat.</p>
+            </div>
+            <div class="pricing__grid"> <!-- BASIS -->
+                <article class="price-card">
+                    <header class="price-card__head">
+                        <h3>Basis</h3>
+                        <p class="contract">Contractduur: <strong>12 maanden</strong></p>
+                        <p class="price"><span>vanaf</span> €295 <small>/ m</small></p>
+                    </header>
+                    <ul class="price-card__list">
+                        <li>Domeinnaam (indien nodig) + Hosting</li>
+                        <li>Website ontwerp — informatief 5–8 pagina’s</li>
+                        <li>Professioneel & op maat design</li>
+                        <li>Websitebeheer & onderhoud</li>
+                    </ul>
+                    <footer class="price-card__cta"> <a class="btn-primary" href="#contact-form"
+                            aria-label="Contact voor Basis pakket">Start met Basis</a>
+                        <p class="note">Ideaal voor starters en lokale bedrijven</p>
+                    </footer>
+                </article> <!-- STANDAARD -->
+                <article class="price-card is-accent" data-badge="Beste keuze">
+                    <header class="price-card__head">
+                        <h3>Standaard</h3>
+                        <p class="contract">Contractduur: <strong>12 maanden</strong></p>
+                        <p class="price"><span>vanaf</span> €445 <small>/ m</small></p>
+                    </header>
+                    <ul class="price-card__list">
+                        <li>Alles uit Basis</li>
+                        <li>Social media beheer</li>
+                        <li>1 professionele post p/w (IG, FB, TikTok)</li>
+                        <li>Ontwerp & publicatie inbegrepen</li>
+                    </ul>
+                    <footer class="price-card__cta"> <a class="btn-primary" href="#contact-form"
+                            aria-label="Contact voor Standaard pakket">Kies Standaard</a>
+                        <p class="note">Consistente zichtbaarheid & groei</p>
+                    </footer>
+                </article> <!-- PREMIUM -->
+                <article class="price-card is-promo" data-badge="-15% actie">
+                    <header class="price-card__head">
+                        <h3>Premium</h3>
+                        <p class="contract">Contractduur: <strong>12 maanden</strong></p>
+                        <p class="price"><span>vanaf</span> €795<small>/ m</small></p>
+                    </header>
+                    <ul class="price-card__list">
+                        <li>Alles uit Standaard</li>
+                        <li>Extra grafisch ontwerp (folders, flyers, brochures, banners)</li>
+                        <li>Online marketing: SEO-optimalisatie & SEA-campagnes</li>
+                        <li class="promo-line">Najaar-actie t/m <span data-deadline="2025-12-31">31-12-2025</span></li>
+                    </ul>
+                    <footer class="price-card__cta"> <a class="btn-primary" href="#contact-form"
+                            aria-label="Contact voor Premium pakket">Ga voor Premium</a>
+                        <p class="note">Performance + creatie voor serieuze groei</p>
+                    </footer>
+                </article> <!-- GEAVANCEERD -->
+                <article class="price-card" data-badge="Maatwerk">
+                    <header class="price-card__head">
+                        <h3>Geavanceerd</h3>
+                        <p class="contract">Contractduur: <strong>in overleg</strong></p>
+                        <p class="price"><span>prijs</span> in overleg</p>
+                    </header>
+                    <ul class="price-card__list">
+                        <li>Volledig maatwerk</li>
+                        <li>Schaalbare oplossingen</li>
+                        <li>Meerdere websites & domeinen</li>
+                        <li>Strategische marketingondersteuning</li>
+                    </ul>
+                    <footer class="price-card__cta"> <a class="btn-primary" href="#contact-form"
+                            aria-label="Contact voor Geavanceerd pakket">Vraag offerte aan</a>
+                        <p class="note">Voor organisaties met uitgebreide wensen</p>
+                    </footer>
+                </article>
+            </div>
+
+            <!-- CONTACT -->
+            <section class="contact-cta" id="contact-form">
+                <div class="contact-cta__inner">
+
+                    <!-- YENİ BAŞLIK BLOĞU (marketing & webpakketten ile aynı stil) -->
+                    <div class="wwd-card contact-head">
+                        <h2 class="wwd-title2">
+                            <span>NEEM</span><span>CONTACT</span><span class="accent">OP</span>
+                        </h2>
+                        <p class="contact-cta__lead">
+                            Vragen over een project of offerte? Stuur ons een bericht – we reageren meestal binnen één
+                            werkdag.
+                        </p>
+                    </div>
+
+                    <!-- (form burada kalıyor) -->
+
+                    <form class="em-form" action="https://formspree.io/f/your-endpoint" method="POST" id="emContactForm"
+                        novalidate>
+                        <!-- bot trap -->
+                        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp-field"
+                            aria-hidden="true" />
+
+                        <div class="em-grid">
+                            <div class="em-field">
+                                <label for="emName">Naam*</label>
+                                <input id="emName" name="name" type="text" placeholder="Je naam" required
+                                    autocomplete="name" />
+                            </div>
+
+                            <div class="em-field">
+                                <label for="emEmail">E-mail*</label>
+                                <input id="emEmail" name="email" type="email" placeholder="jij@bedrijf.nl" required
+                                    autocomplete="email" />
+                            </div>
+                        </div>
+
+                        <div class="em-grid">
+                            <div class="em-field">
+                                <label for="emPhone">Telefoon</label>
+                                <input id="emPhone" name="phone" type="tel" placeholder="+31 6 …" autocomplete="tel" />
+                            </div>
+
+                            <div class="em-field">
+                                <label for="emSubject">Onderwerp</label>
+                                <input id="emSubject" name="subject" type="text"
+                                    placeholder="Waarmee kunnen we helpen?" />
+                            </div>
+                        </div>
+
+                        <div class="em-field">
+                            <label for="emMessage">Bericht*</label>
+                            <textarea id="emMessage" name="message" rows="5"
+                                placeholder="Vertel kort wat je nodig hebt…" required></textarea>
+                        </div>
+
+                        <input type="hidden" name="page" value="Onze Werken" />
+
+                        <div class="em-actions">
+                            <button class="btn-primary" type="submit">Versturen</button>
+                            <p class="em-note">* Verplichte velden</p>
+                        </div>
+
+                        <p class="em-success" role="status" hidden>Bedankt! Je bericht is verzonden. We nemen snel
+                            contact
+                            op.</p>
+                        <p class="em-error" role="alert" hidden>
+                            Er ging iets mis. Probeer het opnieuw of mail naar
+                            <a href="mailto:info@erjenmarketing.nl">info@erjenmarketing.nl</a>.
+                        </p>
+                    </form>
                 </div>
+            </section>
+    </main>
 
-                <div class="em-field">
-                    <label for="emMessage">Bericht*</label>
-                    <textarea id="emMessage" name="message" rows="5" placeholder="Vertel kort wat je nodig hebt…"
-                        required></textarea>
-                </div>
-
-                <input type="hidden" name="page" value="Onze Werken">
-                <div class="em-actions">
-                    <button class="btn-primary" type="submit">Versturen</button>
-                    <p class="em-note">* Verplichte velden</p>
-                </div>
-
-                <p class="em-success" role="status" hidden>Bedankt! Je bericht is verzonden. We nemen snel contact op.
-                </p>
-                <p class="em-error" role="alert" hidden>Er ging iets mis. Probeer het opnieuw of mail naar
-                    <a href="mailto:info@erjenmarketing.nl">info@erjenmarketing.nl</a>.
-                </p>
-            </form>
-        </div>
-    </section>
-
-    <!-- FOOTER (beyaz sürüm, logo aynı) -->
+    <!-- FOOTER -->
     <footer id="contact">
         <div class="footer-content">
             <img src="images/logo.png" alt="Erjen Marketing Logo" class="footer-logo" />
@@ -391,6 +424,8 @@
             <p>KvK: 78617324</p>
         </div>
     </footer>
+
 </body>
+
 
 </html>
