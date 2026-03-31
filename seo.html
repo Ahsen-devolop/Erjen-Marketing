@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="SEO diensten van Erjen Marketing. Professionele zoekmachine optimalisatie voor bedrijven die hoger willen scoren in Google.">
+    <meta name="robots" content="index, follow">
+    <title>SEO Optimalisatie – Hoger in Google | Erjen Marketing</title>
+    <!-- Fonts & global -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="canonical" href="https://erjenmarketing.nl/seo.html">
+    <meta property="og:title" content="SEO Optimalisatie – Hoger in Google | Erjen Marketing">
+    <meta property="og:description"
+        content="Professionele SEO diensten van Erjen Marketing. Meer zichtbaarheid, meer bezoekers en meer klanten via Google.">
+    <meta property="og:image" content="https://erjenmarketing.nl/images/SEO.webp">
+    <meta property="og:url" content="https://erjenmarketing.nl/seo.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SEO Optimalisatie – Erjen Marketing">
+    <meta name="twitter:description" content="Professionele zoekmachine optimalisatie voor bedrijven.">
+
+    <!-- Sayfaya özel stiller -->
+    <style>
+        :root {
+            --ink: #111;
+            --muted: #5f6370;
+            --red: #C1272D;
+            --bg: #f6f7f9;
+            --card: #fff;
+            --r: 22px;
+            --shadow: 0 14px 36px rgba(16, 24, 40, .10);
+            --line: #e9eaee;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Montserrat", system-ui, Segoe UI, Roboto, Arial, sans-serif;
+            color: var(--ink);
+            background: var(--bg);
+        }
+
+        /* İçerik sarmalayıcı */
+        .wrap {
+            max-width: 980px;
+            margin: 28px auto 56px;
+            padding: 0 20px;
+        }
+
+        /* SEO kartı */
+        .seo-card {
+            background: var(--card);
+            border-radius: var(--r);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .seo-card .media {
+            padding: 14px 14px 0;
+        }
+
+        .seo-card .media img {
+            width: 100%;
+            display: block;
+            border-radius: 16px;
+            object-fit: cover;
+            aspect-ratio: 16/9;
+        }
+
+        .seo-card .content {
+            padding: 22px 24px 26px;
+        }
+
+        .seo-card h1 {
+            margin: 6px 0 12px;
+            font-size: clamp(28px, 3vw, 42px);
+            font-weight: 800;
+            letter-spacing: .2px;
+            line-height: 1.2;
+        }
+
+        /* Paragraflar */
+        .seo-card .content {
+            font-size: 16.5px;
+            line-height: 1.8;
+            color: var(--ink);
+        }
+
+        .seo-card p {
+            margin: 0 0 18px;
+            color: var(--muted);
+            text-align: justify;
+            text-justify: inter-word;
+            letter-spacing: .1px;
+        }
+
+        .seo-card strong {
+            color: var(--ink);
+            font-weight: 700;
+        }
+
+        /* CTA kutusu */
+        .cta-box {
+            margin-top: 28px;
+            padding: 20px 24px;
+            background: #fafafa;
+            border-left: 6px solid var(--red);
+            border-radius: 14px;
+            line-height: 1.7;
+        }
+
+        .cta-box p {
+            text-align: left;
+            margin: 0 0 10px;
+        }
+
+        .cta-box a {
+            color: var(--ink);
+            font-weight: 800;
+            text-decoration: none;
+            /* alt çizgi kaldırıldı */
+        }
+
+        .cta-box a:hover {
+            color: var(--red);
+        }
+
+        .cta-box a:focus-visible {
+            outline: 2px solid var(--red);
+            outline-offset: 2px;
+        }
+
+        @media (max-width:600px) {
+            .seo-card .content {
+                font-size: 15.5px;
+                line-height: 1.7;
+                padding: 18px 18px 22px;
+            }
+
+            .seo-card p {
+                text-align: left;
+            }
+
+            .seo-card h1 {
+                margin-top: 2px;
+            }
+        }
+
+        /* Footer */
+        footer#contact {
+            background: #fff;
+            color: var(--ink);
+            padding: 28px 16px 30px;
+            border-top: 1px solid var(--line);
+        }
+
+        footer#contact .footer-content {
+            max-width: 1120px;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        footer#contact .footer-logo {
+            height: 38px;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        footer#contact p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.5;
+            color: var(--muted);
+        }
+
+        footer#contact a {
+            color: var(--ink);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width:520px) {
+            footer#contact {
+                padding: 24px 12px 26px;
+            }
+
+            footer#contact .footer-logo {
+                height: 34px;
+            }
+
+            footer#contact p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="header-container">
+
+            <a href="index.html" class="logo-link" aria-label="Erjen Marketing home">
+                <img src="images/logo.png" alt="Erjen Marketing Logo" class="header-logo" />
+            </a>
+
+            <!-- MOBIEL MENU BUTONU -->
+            <button class="menu-toggle" aria-label="Menu openen/sluiten">☰</button>
+
+            <nav class="header-nav" aria-label="Hoofdmenu">
+                <a href="index.html">Home</a>
+                <a href="OverOns.html">Over Ons</a>
+                <a href="index.html#diensten">Diensten</a>
+                <a href="index.html#projekten">Projecten</a>
+                <a href="index.html#pakketten">Pakketten</a>
+                <a href="index.html#contact-form">Contact</a>
+                <a href="index.html#contact-form" class="cta-button">GRATIS SEO CHECK</a>
+            </nav>
+
+        </div>
+    </header>
+    <!-- HERO -->
+
+    <!-- ANA İÇERİK -->
+    <main class="wrap">
+        <article class="seo-card" aria-labelledby="seo-title">
+            <div class="media">
+                <img src="images/SEO.webp" alt="SEO optimalisatie voor betere zichtbaarheid in Google">
+            </div>
+
+            <div class="content">
+                <h1 id="seo-title">Wat is SEO?</h1>
+
+                <p>
+                    Zoekmachineoptimalisatie (SEO) is een uitgebreid en strategisch proces dat ervoor zorgt dat jouw
+                    website zo hoog mogelijk verschijnt in de zoekresultaten van zoekmachines zoals Google. Hoe hoger je
+                    scoort, hoe zichtbaarder je bent — en dus trek je meer bezoekers aan.
+                </p>
+
+                <p>
+                    Meer dan 80% van alle online zoektochten begint via een zoekmachine. SEO negeren betekent dat je
+                    potentiële klanten rechtstreeks naar je concurrenten laat gaan.
+                </p>
+
+                <p>
+                    Helaas beloven veel bedrijven onrealistische resultaten zoals: “Wij krijgen je binnen een paar weken
+                    op de eerste pagina van Google.” Laat je hierdoor niet misleiden — als het echt zo makkelijk was,
+                    zouden zoekmachines hun geloofwaardigheid verliezen.
+                </p>
+
+                <p>
+                    Bij <strong>Erjen Marketing</strong> maken we uitsluitend gebruik van ethische en up-to-date
+                    SEO-technieken. We bieden duurzame oplossingen die volledig in lijn zijn met de algoritmes van
+                    zoekmachines, zodat jouw online zichtbaarheid op een veilige en effectieve manier toeneemt.
+                </p>
+
+                <div class="cta-box">
+                    <p>🎁 <strong>Gratis SEO-check en adviesgesprek aanvragen?</strong><br>
+                        Wij analyseren jouw website, identificeren sterke en zwakke punten, en bieden een
+                        gepersonaliseerd SEO-plan aan — volledig gratis!
+                    </p>
+                    <p>💬 <a href="index.html#contact-form">Neem nu contact met ons op en ontvang een vrijblijvende
+                            offerte.</a></p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="footer-content">
+            <img src="images/logo.png" alt="Erjen Marketing Logo" class="footer-logo" />
+            <p><a href="mailto:info@erjenmarketing.nl">info@erjenmarketing.nl</a></p>
+            <p><a href="tel:+31850049659">085 004 9659</a></p>
+            <p>Van Utrechtweg 20h, 2921 LN Krimpen aan den IJssel</p>
+            <p>KvK: 78617324</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuKnop = document.querySelector('.menu-toggle');
+        const navigatie = document.querySelector('.header-nav');
+
+        if (menuKnop && navigatie) {
+            menuKnop.addEventListener('click', () => {
+                navigatie.classList.toggle('active');
+            });
+        }
+    </script>
+
+    <!-- GERİ / YUKARI TUŞU -->
+
+
+
+
+</body>
+
+</html>

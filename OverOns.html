@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Over Ons – Erjen Marketing | Online Marketing Bureau</title>
+
+    <meta name="description"
+        content="Leer Erjen Marketing kennen. Wij helpen bedrijven groeien met SEO, Google Ads, social media marketing, webdesign en marketplace strategieën. Resultaatgerichte online marketing.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://erjenmarketing.nl/over-ons.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Over Ons – Erjen Marketing">
+    <meta property="og:description"
+        content="Ontdek hoe Erjen Marketing bedrijven helpt groeien met SEO, SEA, social media en webdesign.">
+    <meta property="og:image" content="https://erjenmarketing.nl/images/logo.png">
+    <meta property="og:url" content="https://erjenmarketing.nl/over-ons.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Over Ons – Erjen Marketing">
+    <meta name="twitter:description"
+        content="Erjen Marketing helpt bedrijven groeien met SEO, advertenties, social media en webdesign.">
+    <meta name="twitter:image" content="https://erjenmarketing.nl/images/logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Schema (Google için) -->
+    <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Organization",
+ "name": "Erjen Marketing",
+ "url": "https://erjenmarketing.nl",
+ "logo": "https://erjenmarketing.nl/images/logo.png",
+ "contactPoint": {
+   "@type": "ContactPoint",
+   "telephone": "+31-85-004-9659",
+   "contactType": "customer service",
+   "areaServed": "NL",
+   "availableLanguage": ["Dutch","English"]
+ }
+}
+</script>
+    <style>
+        :root {
+            --brand: #C1272D;
+            --ink: #111;
+            --muted: #5f6370;
+            --line: #e9eaee;
+            --bg: #f7f8fb;
+            --surface: #fff;
+            --wrap: 1120px;
+            --r: 16px;
+        }
+
+        body {
+            background: var(--bg);
+        }
+
+        /* ===== HERO ===== */
+        .o-hero {
+            padding: clamp(56px, 8vw, 96px) 20px clamp(40px, 6vw, 70px);
+            background: #0f1116;
+            color: #eaecef;
+            border-bottom: 1px solid rgba(255, 255, 255, .08);
+        }
+
+        .o-hero__wrap {
+            max-width: var(--wrap);
+            margin: 0 auto;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1.1fr .9fr;
+            align-items: start;
+        }
+
+        @media (max-width:980px) {
+            .o-hero__wrap {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .o-chip {
+            display: inline-block;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, .1);
+            border: 1px solid rgba(255, 255, 255, .18);
+            color: #ffd0d0;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+
+        .o-hero h1 {
+            margin: 10px 0 8px;
+            font-size: clamp(30px, 5vw, 46px);
+            font-weight: 800;
+            color: #fff;
+            line-height: 1.16;
+        }
+
+        .o-lead {
+            margin: 0;
+            color: #cfd6e2;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .o-hero__aside {
+            display: grid;
+            gap: 10px;
+            align-self: center;
+            justify-self: end;
+        }
+
+        @media (max-width:980px) {
+            .o-hero__aside {
+                align-self: start;
+                justify-self: stretch;
+            }
+        }
+
+        .o-badge {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            background: #141821;
+            color: #eaecef;
+            border: 1px solid rgba(255, 255, 255, .12);
+            border-radius: 12px;
+            padding: 10px 12px;
+            font-weight: 700;
+        }
+
+        .o-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--brand);
+            flex: 0 0 auto;
+        }
+
+        /* ===== CONTENT WRAP ===== */
+        .o-wrap {
+            max-width: var(--wrap);
+            margin: 34px auto 84px;
+            padding: 0 20px;
+        }
+
+        .o-grid {
+            display: grid;
+            gap: 18px;
+            grid-template-columns: 1.1fr .9fr;
+            align-items: start;
+        }
+
+        @media (max-width:980px) {
+            .o-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .o-card {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: var(--r);
+            padding: 20px 22px;
+            box-shadow: 0 8px 22px rgba(16, 24, 40, .06);
+        }
+
+        .o-card h2 {
+            margin: 0 0 10px;
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--ink);
+        }
+
+        .o-card p {
+            margin: 0 0 14px;
+            color: var(--muted);
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .o-card strong {
+            color: var(--ink);
+        }
+
+        .o-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 10px;
+        }
+
+        .o-li {
+            display: grid;
+            grid-template-columns: 20px 1fr;
+            gap: 10px;
+            align-items: start;
+            background: #fafafa;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 10px 12px;
+            font-weight: 700;
+            color: var(--ink);
+        }
+
+        .o-check {
+            width: 18px;
+            height: 18px;
+            margin-top: 2px;
+        }
+
+        /* ===== PROCESS ===== */
+        .o-process {
+            margin: 30px 0 60px;
+        }
+
+        .o-process h3 {
+            margin: 0 0 12px;
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--ink);
+        }
+
+        .o-steps {
+            display: grid;
+            gap: 12px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @media (max-width:980px) {
+            .o-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width:560px) {
+            .o-steps {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .o-step {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 14px;
+            box-shadow: 0 8px 22px rgba(0, 0, 0, .05);
+            transition: transform .15s ease, box-shadow .15s ease;
+        }
+
+        .o-step:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 26px rgba(0, 0, 0, .08);
+        }
+
+        .o-n {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: var(--brand);
+            color: #fff;
+            font-weight: 800;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .o-step h4 {
+            margin: 0 0 4px;
+            font-size: 15.5px;
+            font-weight: 800;
+            color: var(--ink);
+        }
+
+        .o-step p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* ===== CTA (Buton yazının altına) ===== */
+        .o-cta {
+            margin-top: 28px;
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 18px 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: start;
+            gap: 10px;
+            box-shadow: 0 10px 26px rgba(16, 24, 40, .06);
+        }
+
+        .o-cta a {
+            margin-top: 12px;
+            background: linear-gradient(180deg, #C1272D, #b42424);
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 14px;
+            border-radius: 12px;
+            font-weight: 800;
+            box-shadow: 0 10px 22px rgba(193, 39, 45, .22);
+            display: inline-block;
+            width: fit-content;
+        }
+
+        /* ===== FOOTER ===== */
+        footer#contact {
+            background: #fff;
+            color: var(--ink);
+            padding: 28px 16px 30px;
+            border-top: 1px solid var(--line);
+        }
+
+        footer#contact .footer-content {
+            max-width: 1120px;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        footer#contact .footer-logo {
+            height: 38px;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        footer#contact p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.5;
+            color: var(--muted);
+        }
+
+        footer#contact a {
+            color: var(--ink);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width:520px) {
+            footer#contact {
+                padding: 24px 12px 26px;
+            }
+
+            footer#contact .footer-logo {
+                height: 34px;
+            }
+
+            footer#contact p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html#hero" class="logo-link">
+                <img src="images/logo.png" class="header-logo" />
+            </a>
+
+            <button class="menu-toggle" aria-label="Menu openen/sluiten">☰</button>
+
+            <nav class="header-nav" aria-label="Hoofdmenu">
+
+                <a href="index.html#hero">Home</a>
+                <a href="OverOns.html">Over Ons</a>
+                <a href="index.html#diensten">Diensten</a>
+                <a href="index.html#projecten">Projecten</a>
+                <a href="index.html#pakketten">Pakketten</a>
+                <a href="index.html#contact-form">Contact</a>
+                <a href="index.html#contact-form" class="cta-button">GRATIS SEO CHECK</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="o-hero">
+        <div class="o-hero__wrap">
+            <div>
+                <h1>Erjen Marketing – Uw online marketing specialist</h1>
+                <p class="o-lead">
+                    Bij Erjen Marketing geloven we in het <strong>tornado-effect</strong>: wanneer alle energie en
+                    strategie samenkomen, ontstaat er een krachtige beweging die zichzelf versterkt. Zo tillen wij jouw
+                    online zichtbaarheid en verkoopresultaten naar een hoger niveau.
+                </p>
+            </div>
+            <div class="o-hero__aside">
+                <div class="o-badge"><span class="o-dot"></span> Resultaatgerichte aanpak met duidelijke KPI’s</div>
+                <div class="o-badge"><span class="o-dot"></span> SEO • SEA • Social • Webdesign • Marketplaces</div>
+                <div class="o-badge"><span class="o-dot"></span> Transparantie, snelheid en samenwerking</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BODY -->
+    <main class="o-wrap">
+        <section class="o-grid" aria-label="Onze aanpak">
+            <article class="o-card">
+                <h2>Onze aanpak</h2>
+                <p>
+                    Wij combineren SEO, Google Ads (SEA), social
+                    media,
+                    online verkopen en webdesign om jouw bedrijf sneller en duurzamer
+                    te laten
+                    groeien. Met een aanpak die volledig inzichtelijk is via duidelijke KPI’s zorgen we ervoor dat je
+                    altijd grip
+                    houdt op je resultaten.
+                </p>
+                <p>
+                    Ons team is jouw partner in digitale groei. We denken met je mee, volgen de marktontwikkelingen en
+                    vertalen
+                    die naar slimme, strategische stappen. Of het nu gaat om meer vindbaarheid, meer verkopen via je
+                    webshop of
+                    het optimaal inzetten van je advertentiebudget – wij staan voor je klaar.
+                </p>
+            </article>
+
+            <aside class="o-card" aria-label="Wat je van ons mag verwachten">
+                <h2>Wat je van ons mag verwachten</h2>
+                <ul class="o-list">
+                    <li class="o-li">
+                        <svg class="o-check" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M20 6L9 17l-5-5" stroke="#16a34a" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Snel en betrouwbaar samenwerken
+                    </li>
+                    <li class="o-li">
+                        <svg class="o-check" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M20 6L9 17l-5-5" stroke="#16a34a" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Heldere strategieën met focus op resultaat
+                    </li>
+                    <li class="o-li">
+                        <svg class="o-check" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M20 6L9 17l-5-5" stroke="#16a34a" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Slimme optimalisaties voor marketplaces en social media
+                    </li>
+                    <li class="o-li">
+                        <svg class="o-check" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M20 6L9 17l-5-5" stroke="#16a34a" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Creatieve content en conversiegerichte webdesigns
+                    </li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- PROCES -->
+        <section class="o-process" aria-label="Hoe we samenwerken">
+            <h3>Onze werkwijze in 4 stappen</h3>
+            <div class="o-steps">
+                <div class="o-step">
+                    <span class="o-n">1</span>
+                    <h4>Intake & analyse</h4>
+                    <p>Doelen, doelgroep en prestaties in kaart brengen.</p>
+                </div>
+                <div class="o-step">
+                    <span class="o-n">2</span>
+                    <h4>Strategie & planning</h4>
+                    <p>KPI’s en roadmap voor SEO, SEA en social campagnes.</p>
+                </div>
+                <div class="o-step">
+                    <span class="o-n">3</span>
+                    <h4>Creatie & uitvoering</h4>
+                    <p>Campagnes en content die conversie opleveren.</p>
+                </div>
+                <div class="o-step">
+                    <span class="o-n">4</span>
+                    <h4>Optimalisatie & rapportage</h4>
+                    <p>Continue A/B-tests en transparante rapporten.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA (Buton yazının altında) -->
+        <section class="o-cta" aria-label="Klaar voor de tornado?">
+            <div>
+                <h3>Klaar voor de tornado?</h3>
+                <p>Neem vandaag nog contact met ons op en ontdek hoe wij jouw groei meetbaar maken.</p>
+            </div>
+            <a href="index.html#contact-form">Gratis adviesgesprek plannen</a>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="footer-content">
+            <img src="images/logo.png" alt="Erjen Marketing Logo" class="footer-logo" />
+            <p><a href="mailto:info@erjenmarketing.nl">info@erjenmarketing.nl</a></p>
+            <p><a href="tel:+31850049659">085 004 9659</a></p>
+            <p>Van Utrechtweg 20h, 2921 LN Krimpen aan den IJssel</p>
+            <p>KvK: 78617324</p>
+        </div>
+    </footer>
+    <script>
+        const menuKnop = document.querySelector('.menu-toggle');
+        const navigatie = document.querySelector('.header-nav');
+
+        if (menuKnop && navigatie) {
+            menuKnop.addEventListener('click', () => {
+                navigatie.classList.toggle('active');
+            });
+        }
+    </script>
+
+</body>
+
+</html>

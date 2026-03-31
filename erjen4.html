@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Klantcase: Recrewters – Lichtreclame op hoog gebouw | Erjen Marketing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        :root {
+            --max: 1200px;
+            --gap: 1.25rem;
+            --ink: #101218;
+            --muted: #636675;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            color: var(--ink);
+            line-height: 1.6;
+            background: #f7f8fa;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: var(--max);
+            margin: auto;
+            padding: 0 1.25rem;
+        }
+
+        /* back link */
+        .back {
+            display: inline-flex;
+            gap: .5rem;
+            align-items: center;
+            background: #f1f3f7;
+            border-radius: 12px;
+            padding: .6rem .9rem;
+            font-weight: 600;
+        }
+
+        /* sections & cards */
+        .section {
+            padding: 2.5rem 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: var(--gap);
+            align-items: start;
+        }
+
+        .overview {
+            grid-template-columns: 1fr;
+        }
+
+        .overview .card {
+            grid-column: 1 / -1;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(16, 17, 22, .06);
+            padding: 1.25rem;
+        }
+
+        .pill {
+            display: inline-block;
+            background: #f3f4f7;
+            color: #333;
+            padding: .35rem .6rem;
+            border-radius: 999px;
+            font-size: .85rem;
+            margin: .15rem .35rem .15rem 0;
+        }
+
+        /* gallery (caption below) */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--gap);
+        }
+
+        .g-item {
+            border-radius: 16px;
+            overflow: hidden;
+            background: #fff;
+            cursor: pointer;
+            transition: transform .25s ease, box-shadow .25s ease;
+            box-shadow: 0 8px 22px rgba(16, 17, 22, .06);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .g-item img {
+            width: 100%;
+            aspect-ratio: 16/10;
+            object-fit: cover;
+            display: block;
+            transition: transform .25s ease;
+        }
+
+        .g-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 16px 40px rgba(16, 17, 22, .12);
+        }
+
+        .g-cap {
+            position: static;
+            background: #fff;
+            color: var(--ink);
+            padding: .9rem 1rem;
+            font-size: .95rem;
+            font-weight: 600;
+            line-height: 1.35;
+            border-top: 1px solid #edf0f3;
+        }
+
+        /* Recrewters logosu görünür olsun: odak konumu */
+        .g-img--recrewters-day {
+            object-position: 50% 10%;
+        }
+
+        /* üstteki logoya odak */
+        .g-img--recrewters-night {
+            object-position: 50% 25%;
+        }
+
+        /* biraz üst-orta */
+
+        /* ===== Footer (beyaz) — diğer sayfalarla aynı ===== */
+        footer#contact {
+            background: #fff;
+            color: #111;
+            padding: 28px 16px 30px;
+            border-top: 1px solid #e9eaee;
+            margin-top: 2rem;
+        }
+
+        footer#contact .footer-content {
+            max-width: 1120px;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        footer#contact .footer-logo {
+            height: 38px;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        footer#contact p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.5;
+            color: #5f6370;
+        }
+
+        footer#contact a {
+            color: #111;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width:520px) {
+            footer#contact {
+                padding: 24px 12px 26px;
+            }
+
+            footer#contact .footer-logo {
+                height: 34px;
+            }
+
+            footer#contact p {
+                font-size: 14px;
+            }
+        }
+
+        /* ===== /Footer ===== */
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="header-container"> <a href="index.html" class="logo-link" aria-label="Erjen Marketing home">
+                <img src="images/logo.png" alt="Erjen Marketing Logo" class="header-logo" /> </a>
+            <nav class="header-nav" aria-label="Hoofdmenu"> <a href="index.html">Home</a> <a href="OverOns.html">Over
+                    Ons</a> <a href="#diensten">Diensten</a> <a href="#projekten">Projekten</a> <a
+                    href="#pakketten">Pakketten</a> <a href="#contact-form">Contact</a> <a href="#contact-form"
+                    class="cta-button">GRATIS SEO CHECK</a> </nav>
+        </div>
+    </header> <!-- HERO -->
+
+    <div class="container" style="margin-top:1rem;">
+        <a class="back" href="index.html#onze-werken">← Terug naar Projecten</a>
+    </div>
+
+    <!-- OVERVIEW (üstte başlasın) -->
+    <section class="section">
+        <div class="container grid overview">
+            <div class="card">
+                <h2>Over het project</h2>
+                <p>
+                    Voor <strong>Recrewters</strong> realiseerden wij een krachtige <em>lichtreclame</em> bovenop een
+                    hoog kantoorgebouw. Doel was om het merk vanaf grote afstand zichtbaar te maken en 24/7
+                    herkenbaarheid te bieden.
+                </p>
+                <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.5rem">
+                    <span class="pill">Lichtreclame</span>
+                    <span class="pill">Dakconstructie</span>
+                    <span class="pill">LED-verlichting</span>
+                    <span class="pill">Montage & afwerking</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Geleverde diensten</h2>
+                <ul>
+                    <li>Ontwerp & productie van verlichte letters</li>
+                    <li>Constructieve bevestiging en windbestendigheid</li>
+                    <li>LED-verlichting en elektrische aansluiting</li>
+                    <li>Montage op hoogte, keuring en oplevering</li>
+                </ul>
+                <div style="margin-top:1rem;display:flex;gap:.6rem;flex-wrap:wrap">
+                    <a href="index.html#contact" class="back" style="background:#101218;color:#fff">Offerte
+                        aanvragen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" aria-labelledby="galeri">
+        <div class="container">
+            <h2 id="galeri">Resultaten in beeld</h2>
+            <div class="gallery">
+                <figure class="g-item">
+                    <img class="g-img--recrewters-day" src="images/recrewters.webp" alt="Recrewters – gebouw overdag">
+                    <figcaption class="g-cap">Gebouw overdag</figcaption>
+                </figure>
+
+                <figure class="g-item">
+                    <img class="g-img--recrewters-night" src="images/D.webp" alt="Recrewters – lichtreclame ’s avonds">
+                    <figcaption class="g-cap">Lichtreclame ’s avonds</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (beyaz sürüm, diğer sayfalarla aynı) -->
+    <footer id="contact">
+        <div class="footer-content">
+            <img src="images/logo.png" alt="Erjen Marketing Logo" class="footer-logo" />
+            <p><a href="mailto:info@erjenmarketing.nl">info@erjenmarketing.nl</a></p>
+            <p><a href="tel:+31850049659">085 004 9659</a></p>
+            <p>Van Utrechtweg 20h, 2921 LN Krimpen aan den IJssel</p>
+            <p>KvK: 78617324</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Erjen Marketing – Gevelreclame, Belettering, Drukwerk & Online Marketing</title>
+    <meta name="description"
+        content="Erjen Marketing biedt professionele gevelreclame, belettering, drukwerk en online marketing. Van webdesign en SEO tot promotionele materialen voor bedrijven in Nederland.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://erjenmarketing.nl/">
+
+    <!-- Fonts & CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Erjen Marketing – Online Marketing Bureau Nederland">
+    <meta property="og:description" content="SEO, SEA, social media en webdesign voor meetbare groei.">
+    <meta property="og:image" content="https://erjenmarketing.nl/images/logo.png">
+    <meta property="og:url" content="https://erjenmarketing.nl/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Erjen Marketing">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Erjen Marketing – Online Marketing Bureau Nederland">
+    <meta name="twitter:description" content="SEO, SEA, social media en webdesign voor meetbare groei.">
+
+    <style>
+        /* =========================
+   ROOT & GENEL AYARLAR
+   ========================= */
+        :root {
+            --ink: #111;
+            --muted: #5f6370;
+            --line: #e9eaee;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        [id] {
+            scroll-margin-top: var(--header-h);
+        }
+
+        /* =========================
+   ORTAK BAŞLIKLAR
+   ========================= */
+        .wat-wij-doen-section .wwd-title2,
+        .our-work-title .wwd-title2,
+        .contact-cta .contact-title {
+            display: flex;
+            gap: 12px;
+            align-items: baseline;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+
+        /* =========================
+   DIENSTEN – DESKTOP
+   ========================= */
+        .services-section {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        .services-section .wwd-card {
+            margin-bottom: 80px;
+        }
+
+        /* =========================
+   FOOTER
+   ========================= */
+        footer#contact {
+            background: #fff;
+            color: var(--ink);
+            padding: 28px 16px 30px;
+            border-top: 1px solid var(--line);
+        }
+
+        footer#contact .footer-content {
+            max-width: 1120px;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        footer#contact .footer-logo {
+            height: 38px;
+            margin-bottom: 6px;
+        }
+
+        footer#contact p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.5;
+            color: var(--muted);
+        }
+
+        footer#contact a {
+            color: var(--ink);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* =========================
+   MOBIL (TABLET + PHONE)
+   ========================= */
+        @media (max-width: 768px) {
+
+            /* Genel section padding */
+            section {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            /* Diensten spacing */
+            .services-section {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+
+            .services-section .wwd-card {
+                margin-bottom: 48px;
+            }
+
+            /* Başlıklar */
+            .wwd-title2 {
+                font-size: 26px;
+                text-align: center;
+            }
+
+            .wwd-sub2 {
+                font-size: 15px;
+                line-height: 1.6;
+                text-align: center;
+            }
+
+            /* Services grid */
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            /* Project galerij */
+            .portfolio-gallery {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            /* Pricing */
+            .pricing__grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            /* Buttons */
+            .btn-primary,
+            .read-more-button {
+                width: 100%;
+                padding: 14px 16px;
+                font-size: 16px;
+            }
+
+            /* Header */
+            .header-nav {
+                display: none;
+            }
+        }
+
+        /* =========================
+   KÜÇÜK TELEFONLAR
+   ========================= */
+        @media (max-width: 520px) {
+
+            .wat-wij-doen-section .wwd-title2,
+            .our-work-title .wwd-title2,
+            .contact-cta .contact-title {
+                gap: 8px;
+            }
+
+            footer#contact p {
+                font-size: 14px;
+            }
+
+            footer#contact .footer-logo {
+                height: 34px;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+
+
+<body>
+    <main>
+
+        <header class="main-header">
+            <div class="header-container">
+
+                <a href="index.html" class="logo-link" aria-label="Erjen Marketing home">
+                    <img src="images/logo.png" alt="Erjen Marketing Logo" class="header-logo" />
+                </a>
+
+                <!-- MOBIEL MENU KNOP -->
+                <button class="menu-toggle" aria-label="Menu openen/sluiten">☰</button>
+
+                <nav class="header-nav" aria-label="Hoofdmenu">
+                    <a href="index.html">Home</a>
+                    <a href="OverOns.html">Over Ons</a>
+                    <a href="#diensten">Diensten</a>
+                    <a href="#projekten">Projecten</a>
+                    <a href="#pakketten">Pakketten</a>
+                    <a href="#contact-form">Contact</a>
+                    <a href="#contact-form" class="cta-button">GRATIS SEO CHECK</a>
+                </nav>
+
+            </div>
+        </header>
+
+
+
+        <!-- HERO -->
+        <section class="hero-neo" id="hero">
+            <div class="hero-neo__inner">
+                <div class="hero-neo__copy">
+
+                    <span class="chip">SEO • SEA • SOCIAL MEDIA • ONLINE VERKOPEN • WEBDESIGN</span>
+
+                    <h1>Gevelreclame,Drukwerk,Belettering & Online Marketing</h1>
+
+
+                    <p>
+                        Erjen Marketing helpt bedrijven groeien met professionele
+                        <strong>gevelreclame</strong>, <strong>belettering</strong>,
+                        <strong>drukwerk</strong>, <strong>promoties</strong> en
+                        <strong>online marketing</strong>.
+                        Wij combineren <strong>SEO</strong>, <strong>Google Ads</strong> en
+                        <strong>webdesign</strong> om zowel online als offline maximale zichtbaarheid te creëren.
+                    </p>
+                    <ul class="hero-list">
+                        <li>Gevelreclame, bedrijfsbelettering & LED displays</li>
+                        <li>Drukwerk, promoties, flyers & brochures</li>
+                        <li>Technische SEO-audit, contentstrategie & linkbuilding</li>
+                        <li>SEA-campagnes (Search, Performance Max, Remarketing)</li>
+                        <li>Social media beheer & performance creatives</li>
+                        <li>Marketplace optimalisatie (Bol, Amazon, eBay)</li>
+                        <li>Website onderhoud, snelle hosting & conversie-optimalisatie (CRO)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- KPI -->
+        <section class="kpi-strip" aria-label="Kerncijfers">
+            <div class="kpi-inner">
+                <div class="kpi"><strong>40+</strong><span>Projecten</span></div>
+                <div class="kpi"><strong>50+</strong><span>Klanten</span></div>
+                <div class="kpi"><strong>8+</strong><span>Sectoren bediend</span></div>
+            </div>
+        </section>
+
+
+
+
+        <!-- DIENSTEN -->
+        <section class="services-section" id="diensten">
+            <div class="wwd-card">
+                <h2 class="wwd-title2">
+                    <span>ONZE</span>
+                    <span class="accent">DIENSTEN</span>
+                </h2>
+                <p class="wwd-sub2">
+                    Van online marketing en webdesign tot gevelreclame, belettering en visuele branding.
+                </p>
+            </div>
+
+
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <img src="images/1.webp" alt="SEO bureau Nederland – Zoekmachine optimalisatie diensten"
+                        loading="lazy" width="400" height="300" />
+                    <h3>SEO</h3>
+                    <p>Boost je online zichtbaarheid met professionele zoekmachine optimalisatie voor bedrijven in
+                        Nederland.</p>
+                    <a href="seo.html" class="read-more-button">Lees meer</a>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/2.webp" alt="Google Ads specialist Nederland – SEA campagnes" loading="lazy"
+                        width="400" height="300" />
+                    <h3>Google Ads (SEA)</h3>
+                    <p>Trek gerichte bezoekers met effectieve Google Ads campagnes en maximale ROI.</p>
+                    <a href="googleAds.html" class="read-more-button">Lees meer</a>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/3.webp" alt="Content marketing Nederland – Professionele content creatie"
+                        loading="lazy" width="400" height="300" />
+                    <h3>Contentcreatie</h3>
+                    <p>Strategische contentmarketing en professionele contentcreatie die uw online zichtbaarheid
+                        vergroot, vertrouwen opbouwt en meer klanten oplevert.</p>
+                    <a href="contentCreatie.html" class="read-more-button">Lees meer</a>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/4.webp" alt="Social media marketing bureau Nederland" loading="lazy" width="400"
+                        height="300" />
+                    <h3>Social Media </h3>
+                    <p>Groei op Instagram, Facebook en TikTok met slimme social media strategieën.</p>
+                    <a href="socialMedia.html" class="read-more-button">Lees meer</a>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/5.webp" alt="Online verkopen via Bol.com en Amazon optimalisatie" loading="lazy"
+                        width="400" height="300" />
+                    <h3>Online Verkopen & Marketplace</h3>
+                    <p>Verhoog je verkoop via Bol.com, Amazon of eBay met geoptimaliseerde marketplace strategieën.</p>
+                    <a href="onlineVerkopen.html" class="read-more-button">Lees meer</a>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/6.webp" alt="Webdesign bureau Nederland – Moderne websites" loading="lazy"
+                        width="400" height="300" />
+                    <h3>Webdesign </h3>
+                    <p>Een moderne website die snel, mobielvriendelijk en conversiegericht is.</p>
+                    <a href="webdesign.html" class="read-more-button">Lees meer</a>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/7.webp" alt="Gevelreclame en bedrijfsbelettering Nederland" loading="lazy"
+                        width="400" height="300" />
+                    <h3>Gevelreclame & Belettering</h3>
+                    <p>Doosletters, belettering en LED-displays met maximale zichtbaarheid.</p>
+                    <a href="gevelreclame.html" class="read-more-button">Lees meer</a>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/8.webp" alt="Website onderhoud en hosting Nederland" loading="lazy" width="400"
+                        height="300" />
+                    <h3>Website Onderhoud</h3>
+                    <p>Updates, back-ups, beveiliging en performance – zorgeloos technisch onderhoud.</p>
+                    <a href="websiteOnderhoud.html" class="read-more-button">Lees meer</a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <section class="our-work-title wat-wij-doen-section" id="projekten">
+            <div class="wwd-card">
+                <h2 class="wwd-title2">
+                    <span>ONZE</span><span class="accent">PROJECTEN</span>
+                </h2>
+                <p class="wwd-sub2">
+                    Van online marketing en webdesign tot fysieke zichtbaarheid en branding.
+                </p>
+            </div>
+        </section>
+
+        <section class="portfolio-groups">
+
+            <!-- GROEP 1 -->
+            <div class="project-group">
+                <h3 class="project-group-title">Gevelreclame & Belettering</h3>
+
+                <div class="portfolio-gallery">
+                    <img src="images/A.webp" alt="Gevelreclame project bedrijfspand Nederland" loading="lazy">
+                    <img src="images/avrasya1.webp" alt="Bedrijfsbelettering winkelpand Nederland" loading="lazy">
+                    <img src="images/avrasya2.webp" alt="Gevelreclame installatie restaurant Nederland" loading="lazy">
+                    <img src="images/avrasya3.webp" alt="Buitenreclame en gevelletters Nederland" loading="lazy">
+                    <img src="images/branding2.jpg" alt="Branding en gevelreclame project Nederland" loading="lazy">
+                    <img src="images/branding3.jpg" alt="Professionele bedrijfsbelettering Nederland" loading="lazy">
+                    <img src="images/branding4.jpg" alt="Moderne winkelgevel reclame Nederland" loading="lazy">
+                    <img src="images/gevelreclame.webp" alt="LED gevelreclame installatie Nederland" loading="lazy">
+                    <img src="images/D.webp" alt="Reclameletters voor bedrijfspand Nederland" loading="lazy">
+                    <img src="images/DeKron.jpg" alt="Gevelbranding winkelcentrum Nederland" loading="lazy">
+                    <img src="images/tandarts.jpg" alt="Gevelreclame tandarts praktijk Nederland" loading="lazy">
+                    <img src="images/tandarts1.jpg" alt="Belettering tandarts praktijk Nederland" loading="lazy">
+                    <img src="images/infinitas1.jpg" alt="Bedrijfspand belettering Nederland" loading="lazy">
+                    <img src="images/infinitas2.jpg" alt="Professionele gevelletters Nederland" loading="lazy">
+                    <img src="images/I.webp" alt="Gevelreclame project Zuid-Holland" loading="lazy">
+                </div>
+            </div>
+
+            <!-- GROEP 2 -->
+            <div class="project-group">
+                <h3 class="project-group-title">Drukwerk & Promoties</h3>
+
+                <div class="portfolio-gallery">
+                    <img src="images/H.webp" alt="Bedrijfsdrukwerk promotie Nederland" loading="lazy">
+                    <img src="images/branding5.jpg" alt="Marketing drukwerk ontwerp Nederland" loading="lazy">
+                    <img src="images/branding6.jpg" alt="Flyer en brochure ontwerp Nederland" loading="lazy">
+                    <img src="images/branding7.jpg" alt="Professionele promotiematerialen Nederland" loading="lazy">
+                    <img src="images/branding8.jpg" alt="Branding drukwerk project Nederland" loading="lazy">
+                </div>
+            </div>
+
+            <!-- GROEP 3 -->
+            <div class="project-group">
+                <h3 class="project-group-title">LED Displays</h3>
+
+                <div class="portfolio-gallery led-gallery">
+                    <img src="images/Label1.jpg" alt="LED display reclamebord Nederland" loading="lazy">
+                    <img src="images/Label2.jpg" alt="Digitale LED gevelreclame Nederland" loading="lazy">
+                    <img src="images/Label3.jpg" alt="LED scherm installatie winkel Nederland" loading="lazy">
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- PRIJZEN / PAKKETTEN -->
+        <section class="pricing" id="pakketten" aria-label="Marketing & Webpakketten">
+
+            <div class="pricing__head wwd-card">
+                <h2 class="wwd-title2">
+                    <span>MARKETING &</span>
+                    <span class="accent">WEBPAKKETTEN</span>
+                </h2>
+                <p class="pricing__sub">Kies een pakket of vraag een offerte op maat.</p>
+            </div>
+
+
+            <div class="pricing__grid">
+
+                <!-- BASIS -->
+                <article class="price-card">
+
+                    <header class="price-card__head">
+                        <h3>Basis</h3>
+                        <p class="contract">Contractduur: <strong>12 maanden</strong></p>
+                        <p class="price"><span>vanaf</span> €295 <small>/ m</small></p>
+                    </header>
+
+                    <ul class="price-card__list">
+                        <li>Domeinnaam (indien nodig) + Hosting</li>
+                        <li>Website ontwerp — informatief 5–8 pagina’s</li>
+                        <li>Professioneel & op maat design</li>
+                        <li>Websitebeheer & onderhoud</li>
+                    </ul>
+
+                    <footer class="price-card__cta">
+                        <a class="btn-primary pakket-btn" data-pakket="Basis" href="#contact-form"
+                            aria-label="Contact voor Basis pakket">Start met Basis</a>
+                        <p class="note">Ideaal voor starters en lokale bedrijven</p>
+                    </footer>
+                </article>
+
+
+
+                <!-- STANDAARD -->
+                <article class="price-card is-accent" data-badge="Beste keuze">
+
+                    <header class="price-card__head">
+                        <h3>Standaard</h3>
+                        <p class="contract">Contractduur: <strong>12 maanden</strong></p>
+                        <p class="price"><span>vanaf</span> €445 <small>/ m</small></p>
+                    </header>
+
+                    <ul class="price-card__list">
+                        <li>Alles uit Basis</li>
+                        <li>Social media beheer</li>
+                        <li>1 professionele post p/w (IG, FB, TikTok)</li>
+                        <li>Ontwerp & publicatie inbegrepen</li>
+                    </ul>
+
+                    <footer class="price-card__cta">
+                        <a class="btn-primary pakket-btn" data-pakket="Standaard" href="#contact-form"
+                            aria-label="Contact voor Standaard pakket">Kies Standaard</a>
+                        <p class="note">Consistente zichtbaarheid & groei</p>
+                    </footer>
+
+                </article>
+
+
+
+                <!-- PREMIUM -->
+                <article class="price-card is-promo" data-badge="-15% actie">
+
+                    <header class="price-card__head">
+                        <h3>Premium</h3>
+                        <p class="contract">Contractduur: <strong>12 maanden</strong></p>
+                        <p class="price"><span>vanaf</span> €795 <small>/ m</small></p>
+                    </header>
+
+                    <ul class="price-card__list">
+                        <li>Alles uit Standaard</li>
+                        <li>Extra grafisch ontwerp (folders, flyers, brochures, banners)</li>
+                        <li>Online marketing: SEO-optimalisatie & SEA-campagnes</li>
+                        <li class="promo-line">Najaar-actie t/m <span data-deadline="2025-12-31">31-12-2025</span></li>
+                    </ul>
+
+                    <footer class="price-card__cta">
+                        <a class="btn-primary pakket-btn" data-pakket="Premium" href="#contact-form"
+                            aria-label="Contact voor Premium pakket">Ga voor Premium</a>
+                        <p class="note">Performance + creatie voor serieuze groei</p>
+                    </footer>
+
+                </article>
+
+
+
+                <!-- GEAVANCEERD -->
+                <article class="price-card" data-badge="Maatwerk">
+
+                    <header class="price-card__head">
+                        <h3>Geavanceerd</h3>
+                        <p class="contract">Contractduur: <strong>in overleg</strong></p>
+                        <p class="price"><span>prijs</span> in overleg</p>
+                    </header>
+
+                    <ul class="price-card__list">
+                        <li>Volledig maatwerk</li>
+                        <li>Schaalbare oplossingen</li>
+                        <li>Meerdere websites & domeinen</li>
+                        <li>Strategische marketingondersteuning</li>
+                    </ul>
+
+                    <footer class="price-card__cta">
+                        <a class="btn-primary pakket-btn" data-pakket="Geavanceerd" href="#contact-form"
+                            aria-label="Contact voor Geavanceerd pakket">Vraag offerte aan</a>
+                        <p class="note">Voor organisaties met uitgebreide wensen</p>
+                    </footer>
+
+                </article>
+
+            </div>
+
+
+
+
+            <!-- CONTACT FORM -->
+            <section class="contact-cta" id="contact-form">
+                <div class="contact-cta__inner">
+
+                    <div class="wwd-card contact-head">
+                        <h2 class="wwd-title2">
+                            <span>NEEM</span>
+                            <span>CONTACT</span>
+                            <span class="accent">OP</span>
+                        </h2>
+
+                        <p class="contact-cta__lead">
+                            Vragen over een project of offerte? Stuur ons een bericht – we reageren meestal binnen één
+                            werkdag.
+                        </p>
+                    </div>
+
+
+                    <form class="em-form" id="emContactForm" novalidate>
+
+
+
+                        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp-field" />
+
+                        <div class="em-grid">
+
+                            <div class="em-field">
+                                <label for="emName">Naam*</label>
+                                <input id="emName" name="name" type="text" placeholder="Je naam" required
+                                    autocomplete="name" />
+                            </div>
+
+                            <div class="em-field">
+                                <label for="emEmail">E-mail*</label>
+                                <input id="emEmail" name="email" type="email" placeholder="jij@bedrijf.nl" required
+                                    autocomplete="email" />
+                            </div>
+
+                        </div>
+
+
+                        <div class="em-grid">
+
+                            <div class="em-field">
+                                <label for="emPhone">Telefoon</label>
+                                <input id="emPhone" name="phone" type="tel" placeholder="+31 6 …" autocomplete="tel" />
+                            </div>
+
+                            <div class="em-field">
+                                <label for="emSubject">Onderwerp</label>
+                                <input id="emSubject" name="subject" type="text"
+                                    placeholder="Waarmee kunnen we helpen?" />
+                            </div>
+
+                        </div>
+
+
+                        <div class="em-field">
+                            <label for="emMessage">Bericht*</label>
+                            <textarea id="emMessage" name="message" rows="5"
+                                placeholder="Vertel kort wat je nodig hebt…" required></textarea>
+                        </div>
+
+
+                        <div class="em-actions">
+                            <button class="btn-primary" type="submit">Versturen</button>
+                            <p class="em-note">* Verplichte velden</p>
+                        </div>
+                        <div id="form-success" style="display:none; color:green; margin-top:15px; font-weight:600;">
+                            ✅ Bericht succesvol verzonden!
+                            Wij nemen uiterlijk binnen 2 werkdagen contact met u op.
+                        </div>
+
+                        <div id="form-error" style="display:none; color:red; margin-top:15px; font-weight:600;">
+                            ❌ Er is iets misgegaan. Probeer het later opnieuw.
+                        </div>
+
+
+                    </form>
+
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+
+
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="footer-content">
+            <img src="images/logo.png" alt="Erjen Marketing Logo" class="footer-logo" />
+            <p><a href="mailto:info@erjenmarketing.nl">info@erjenmarketing.nl</a></p>
+            <p><a href="tel:+31850049659">085 004 9659</a></p>
+            <p>Van Utrechtweg 20h, 2921 LN Krimpen aan den IJssel</p>
+            <p>KvK: 78617324</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- SCRIPT: Kliklenen pakket → Form Onderwerp otomatik doldur -->
+    <script>
+        document.querySelectorAll('.pakket-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+
+                const pakket = this.getAttribute('data-pakket');
+                const subjectInput = document.querySelector('#emSubject');
+
+                if (subjectInput) {
+                    subjectInput.value = "Aanvraag voor pakket: " + pakket;
+                }
+            });
+        });
+    </script>
+    <script>
+        const form = document.getElementById("emContactForm");
+        const successMsg = document.getElementById("form-success");
+        const errorMsg = document.getElementById("form-error");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+
+            fetch("https://formspree.io/f/xrbnayld", {
+
+                method: "POST",
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    successMsg.style.display = "block";
+                    errorMsg.style.display = "none";
+                    form.reset();
+                } else {
+                    errorMsg.style.display = "block";
+                    successMsg.style.display = "none";
+                }
+            }).catch(error => {
+                errorMsg.style.display = "block";
+                successMsg.style.display = "none";
+            });
+        });
+    </script>
+
+
+    <script>
+        if (typeof closeBtn !== "undefined") {
+            closeBtn.addEventListener("click", () => {
+                lightbox.classList.remove("active");
+            });
+        }
+
+        if (typeof lightbox !== "undefined") {
+
+            lightbox.addEventListener("click", (e) => {
+                if (e.target === lightbox) {
+                    lightbox.classList.remove("active");
+                }
+            });
+
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "Escape") {
+                    lightbox.classList.remove("active");
+                }
+            });
+
+        }
+    </script>
+
+    <script>
+        const menuKnop = document.querySelector('.menu-toggle');
+        const navigatie = document.querySelector('.header-nav');
+
+        menuKnop.addEventListener('click', () => {
+            navigatie.classList.toggle('active');
+        });
+    </script>
+
+
+    <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "name": "Erjen Marketing",
+ "image": "https://erjenmarketing.nl/images/logo.png",
+ "url": "https://erjenmarketing.nl",
+ "telephone": "+31850049659",
+ "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "Van Utrechtweg 20h",
+   "addressLocality": "Krimpen aan den IJssel",
+   "postalCode": "2921 LN",
+   "addressCountry": "NL"
+ }
+}
+</script>
+
+
+
+</body>
+
+</html>
